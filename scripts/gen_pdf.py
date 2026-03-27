@@ -209,8 +209,14 @@ def md_to_flowables(md_text: str):
     return flowables
 
 # ── build ─────────────────────────────────────────────────────────────────────
+def _extract_version(md_text: str) -> str:
+    m = re.search(r"\*\*Versione documento:\*\*\s*([\d.]+)", md_text)
+    return m.group(1) if m else "?"
+
+
 def main():
     md_text = MD.read_text(encoding="utf-8")
+    version = _extract_version(md_text)
 
     doc = SimpleDocTemplate(
         str(OUT),
@@ -225,7 +231,7 @@ def main():
         canvas.saveState()
         canvas.setFont("Helvetica", 7.5)
         canvas.setFillColor(colors.grey)
-        canvas.drawString(2*cm, 1.2*cm, "Navigatore Burocratico — Analisi Tecnica v0.1")
+        canvas.drawString(2*cm, 1.2*cm, f"Navigatore Burocratico — Analisi Tecnica v{version}")
         canvas.drawRightString(A4[0]-2*cm, 1.2*cm, f"Pagina {doc.page}")
         canvas.restoreState()
 
