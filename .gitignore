@@ -38,3 +38,7 @@ docker-compose.override.yml
 # OS
 .DS_Store
 Thumbs.db
+
+# Claude
+.claude/
+CLAUDE.md
