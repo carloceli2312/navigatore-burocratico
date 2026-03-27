@@ -1,0 +1,257 @@
+{
+  "slug": "permesso-costruire-cosenza",
+  "name": "Permesso di Costruire",
+  "category": "edilizia",
+  "description": "Procedura per ottenere il Permesso di Costruire per nuove costruzioni, ampliamenti significativi o ristrutturazioni urbanistiche nel Comune di Cosenza. Il Comune ha 75 giorni per la decisione.",
+  "ente_competente": "Comune di Cosenza — Sportello Unico per l'Edilizia (SUE)",
+  "tags": ["edilizia", "privato", "impresa", "nuova-costruzione", "ampliamento"],
+  "tempo_stimato_giorni": 120,
+  "costo_stimato_eur": 2500.0,
+  "steps": [
+    {
+      "order": 1,
+      "title": "Valuta la fattibilità urbanistica",
+      "description": "Prima di procedere, verifica che l'intervento sia consentito dalle norme urbanistiche locali: Piano Regolatore Generale (PRG) del Comune di Cosenza, Norme Tecniche di Attuazione (NTA), e vincoli esistenti (idrogeologici, paesaggistici, sismici). Richiedi un appuntamento allo Sportello Unico Edilizia per un pre-parere informale se necessario.",
+      "ufficio": "Comune di Cosenza — SUE / Ufficio Pianificazione Urbanistica",
+      "costo_stimato_eur": null,
+      "tempo_stimato_giorni": 10,
+      "documents": [
+        {
+          "name": "Visura catastale e planimetria del lotto",
+          "required": true,
+          "notes": "Per verificare la destinazione urbanistica del terreno/immobile"
+        },
+        {
+          "name": "Certificato di destinazione urbanistica (CDU)",
+          "required": true,
+          "notes": "Rilasciato dal Comune — validità 1 anno"
+        }
+      ]
+    },
+    {
+      "order": 2,
+      "title": "Redazione del progetto esecutivo",
+      "description": "Incarica un tecnico abilitato (ingegnere o architetto iscritto all'albo) per la redazione del progetto esecutivo completo. Il progetto deve rispettare tutte le normative edilizie, antisismiche e urbanistiche vigenti.",
+      "ufficio": null,
+      "costo_stimato_eur": 3000.0,
+      "tempo_stimato_giorni": 30,
+      "documents": [
+        {
+          "name": "Elaborati grafici completi (planimetria, piante, prospetti, sezioni, particolari)",
+          "required": true,
+          "notes": "Scala 1:100 minimo; firmati e timbrati dal progettista"
+        },
+        {
+          "name": "Relazione tecnica illustrativa",
+          "required": true,
+          "notes": "Descrive l'intervento e attesta la conformità alle norme"
+        },
+        {
+          "name": "Relazione geologica e geotecnica",
+          "required": true,
+          "notes": "Obbligatoria per nuove costruzioni"
+        },
+        {
+          "name": "Progetto strutturale con relazione di calcolo",
+          "required": true,
+          "notes": "Redatto da ingegnere strutturista iscritto all'albo"
+        },
+        {
+          "name": "Relazione impianti (elettrico, idraulico, termico)",
+          "required": true,
+          "notes": "Se applicabile all'intervento"
+        }
+      ]
+    },
+    {
+      "order": 3,
+      "title": "Ottieni i pareri delle autorità preposte (se vincolato)",
+      "description": "Se l'immobile è soggetto a vincoli (paesaggistico, storico-artistico, idrogeologico), devi acquisire preventivamente il nulla osta dall'autorità competente prima di presentare l'istanza al Comune.",
+      "ufficio": "Soprintendenza Archeologia Belle Arti e Paesaggio della Calabria / Autorità di Bacino",
+      "costo_stimato_eur": null,
+      "tempo_stimato_giorni": 45,
+      "documents": [
+        {
+          "name": "Autorizzazione paesaggistica (se area vincolata)",
+          "required": false,
+          "notes": "Rilasciata dalla Soprintendenza — 60 giorni di attesa stimati"
+        },
+        {
+          "name": "Nulla osta idrogeologico (se area a rischio)",
+          "required": false,
+          "notes": "Rilasciato dall'Autorità di Bacino della Calabria"
+        },
+        {
+          "name": "Autorizzazione sismica",
+          "required": true,
+          "notes": "Cosenza è in zona sismica 2 — deposito allo Sportello Antisismico della Regione Calabria"
+        }
+      ]
+    },
+    {
+      "order": 4,
+      "title": "Raccoglie la documentazione anagrafica e catastale",
+      "description": "Prepara i documenti personali e catastali richiesti per l'istanza.",
+      "ufficio": "Agenzia delle Entrate — Ufficio Territoriale di Cosenza",
+      "costo_stimato_eur": 30.0,
+      "tempo_stimato_giorni": 5,
+      "documents": [
+        {
+          "name": "Documento di identità e codice fiscale del richiedente",
+          "required": true,
+          "notes": null
+        },
+        {
+          "name": "Titolo di proprietà (atto notarile)",
+          "required": true,
+          "notes": "O altro titolo che legittima l'intervento"
+        },
+        {
+          "name": "Estratto di mappa catastale",
+          "required": true,
+          "notes": "Aggiornato, con indicazione del lotto"
+        },
+        {
+          "name": "Visura catastale storica",
+          "required": false,
+          "notes": "Utile per verificare eventuali abusi pregressi da sanare"
+        }
+      ]
+    },
+    {
+      "order": 5,
+      "title": "Calcola e versa gli oneri di costruzione",
+      "description": "Il Permesso di Costruire prevede il pagamento di contributi obbligatori: oneri di urbanizzazione primaria e secondaria, costo di costruzione. L'importo si calcola in base alla superficie e alla destinazione d'uso.",
+      "ufficio": "Comune di Cosenza — Ufficio Tributi / SUE",
+      "costo_stimato_eur": 2500.0,
+      "tempo_stimato_giorni": 3,
+      "documents": [
+        {
+          "name": "Ricevuta versamento oneri di urbanizzazione primaria",
+          "required": true,
+          "notes": "Calcolati con il tariffario comunale vigente"
+        },
+        {
+          "name": "Ricevuta versamento oneri di urbanizzazione secondaria",
+          "required": true,
+          "notes": null
+        },
+        {
+          "name": "Ricevuta versamento costo di costruzione",
+          "required": true,
+          "notes": "Oppure richiesta di rateizzazione"
+        }
+      ]
+    },
+    {
+      "order": 6,
+      "title": "Presenta l'istanza al SUE",
+      "description": "Deposita l'istanza completa allo Sportello Unico per l'Edilizia, preferibilmente in via telematica tramite il portale regionale. Alla protocollazione, il Comune ha 75 giorni per pronunciarsi. Un responsabile del procedimento (RUP) verrà assegnato alla pratica.",
+      "ufficio": "Comune di Cosenza — SUE, Piazza dei Bruzi 4 (o portale telematico)",
+      "costo_stimato_eur": null,
+      "tempo_stimato_giorni": 1,
+      "documents": [
+        {
+          "name": "Modulo di istanza Permesso di Costruire (modello unificato)",
+          "required": true,
+          "notes": "Con firma del richiedente e del progettista"
+        },
+        {
+          "name": "Tutta la documentazione tecnica e anagrafica raccolta",
+          "required": true,
+          "notes": "In formato digitale PDF/A per la presentazione telematica"
+        }
+      ]
+    },
+    {
+      "order": 7,
+      "title": "Attendi l'istruttoria e rispondi alle integrazioni",
+      "description": "Il RUP istruisce la pratica entro 75 giorni. Può richiedere integrazioni documentali: hai 15 giorni per rispondere, altrimenti la pratica viene sospesa. Al termine dei 75 giorni, il Comune emette il provvedimento (rilascio o diniego). Il silenzio-assenso si configura dopo 75 giorni solo se la pratica è completa.",
+      "ufficio": "Comune di Cosenza — SUE",
+      "costo_stimato_eur": null,
+      "tempo_stimato_giorni": 75,
+      "documents": [
+        {
+          "name": "Eventuale documentazione integrativa richiesta dal RUP",
+          "required": false,
+          "notes": "Presenta entro 15 giorni dalla richiesta per non sospendere i termini"
+        }
+      ]
+    },
+    {
+      "order": 8,
+      "title": "Ritira il Permesso di Costruire",
+      "description": "Alla comunicazione di rilascio, ritira il provvedimento allo sportello o scaricalo dal portale telematico. Il permesso ha validità: inizio lavori entro 1 anno dal rilascio; fine lavori entro 3 anni dall'inizio (prorogabile).",
+      "ufficio": "Comune di Cosenza — SUE",
+      "costo_stimato_eur": null,
+      "tempo_stimato_giorni": 3,
+      "documents": [
+        {
+          "name": "Permesso di Costruire originale",
+          "required": true,
+          "notes": "Da conservare e tenere disponibile in cantiere"
+        }
+      ]
+    },
+    {
+      "order": 9,
+      "title": "Avvia il cantiere e notifica l'inizio lavori",
+      "description": "Prima di aprire il cantiere, deposita la Comunicazione di Inizio Lavori (CIL) al SUE, allestisci il cantiere nel rispetto della normativa sicurezza (D.Lgs. 81/2008) e posiziona il cartello di cantiere. Per opere strutturali, notifica anche allo Sportello Antisismico regionale.",
+      "ufficio": "Comune di Cosenza — SUE / Sportello Antisismico Regione Calabria",
+      "costo_stimato_eur": null,
+      "tempo_stimato_giorni": 5,
+      "documents": [
+        {
+          "name": "Comunicazione di Inizio Lavori",
+          "required": true,
+          "notes": "Con indicazione del direttore dei lavori e dell'impresa esecutrice"
+        },
+        {
+          "name": "Notifica preliminare cantiere (se più di 200 uomini/giorno)",
+          "required": false,
+          "notes": "Da inviare all'ASP di Cosenza e all'Ispettorato del Lavoro"
+        },
+        {
+          "name": "Cartello di cantiere",
+          "required": true,
+          "notes": "Con estremi del permesso, committente, progettista, DL, impresa"
+        }
+      ]
+    },
+    {
+      "order": 10,
+      "title": "Fine lavori e richiesta Agibilità",
+      "description": "Al termine dei lavori, il direttore dei lavori deposita la Comunicazione di Fine Lavori. Entro 15 giorni presenta la Segnalazione Certificata di Agibilità (SCA) al SUE, allegando certificazioni impianti, collaudo strutturale e certificato energetico APE.",
+      "ufficio": "Comune di Cosenza — SUE",
+      "costo_stimato_eur": 200.0,
+      "tempo_stimato_giorni": 30,
+      "documents": [
+        {
+          "name": "Comunicazione di Fine Lavori firmata dal DL",
+          "required": true,
+          "notes": null
+        },
+        {
+          "name": "Certificato di collaudo statico",
+          "required": true,
+          "notes": "Redatto dal collaudatore designato"
+        },
+        {
+          "name": "Attestato di Prestazione Energetica (APE)",
+          "required": true,
+          "notes": "Redatto da tecnico certificatore energetico"
+        },
+        {
+          "name": "Certificati di conformità impianti (Dichiarazione di conformità)",
+          "required": true,
+          "notes": "Per impianto elettrico, idrico, termico"
+        },
+        {
+          "name": "Aggiornamento catastale (Docfa)",
+          "required": true,
+          "notes": "Obbligatorio per nuove costruzioni e variazioni catastali"
+        }
+      ]
+    }
+  ]
+}

@@ -6,9 +6,7 @@ from sqlalchemy.ext.asyncio import create_async_engine
 from alembic import context
 from backend.core.config import settings
 from backend.db.base import Base
-
-# Import all models here so Alembic can detect them for autogenerate.
-# Example: from backend.models.procedure import Procedure  # noqa: F401
+from backend.models.procedure import Document, Procedure, Step  # noqa: F401
 
 config = context.config
 
