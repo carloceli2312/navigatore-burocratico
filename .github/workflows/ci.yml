@@ -34,7 +34,7 @@ jobs:
         run: pytest
         env:
           APP_ENV: testing
-          SECRET_KEY: ci-secret-key-not-used-in-tests
+          SECRET_KEY: ci-secret-key-32-bytes-minimum-ok
           DATABASE_URL: postgresql+asyncpg://nav_user:password@localhost:5432/navigatore_burocratico
           OLLAMA_BASE_URL: http://localhost:11434
           OLLAMA_MODEL: llama3
