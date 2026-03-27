@@ -1,0 +1,40 @@
+name: CI
+
+on:
+  push:
+    branches: ["main", "fase-*"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Install ruff
+        run: pip install ruff
+      - name: Run ruff
+        run: ruff check .
+
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Install dependencies
+        run: pip install -e ".[dev]"
+      - name: Run tests
+        run: pytest
+        env:
+          APP_ENV: testing
+          SECRET_KEY: ci-secret-key-not-used-in-tests
+          DATABASE_URL: postgresql+asyncpg://nav_user:password@localhost:5432/navigatore_burocratico
+          OLLAMA_BASE_URL: http://localhost:11434
+          OLLAMA_MODEL: llama3
