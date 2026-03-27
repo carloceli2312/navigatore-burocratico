@@ -1,6 +1,6 @@
 # Navigatore Burocratico — Analisi Tecnica
 
-**Versione documento:** 0.3
+**Versione documento:** 0.4
 **Data:** 2026-03-27
 **Stato:** Draft
 
@@ -32,8 +32,8 @@ L'obiettivo è abbattere la complessità della burocrazia italiana fornendo:
 | Migrazioni DB | Alembic | ≥ 1.14 |
 | Server ASGI | Uvicorn | ≥ 0.30 |
 | Configurazione | Pydantic Settings | ≥ 2.7 |
-| Upload file | python-multipart | ≥ 0.0.20 |
 | HTTP client | HTTPX | ≥ 0.28 |
+| Autenticazione | PyJWT + bcrypt | ≥ 2.9 / ≥ 4.0 |
 | AI / LLM | Ollama (self-hosted) | — |
 
 ### 2.2 Mobile
@@ -56,17 +56,24 @@ L'obiettivo è abbattere la complessità della burocrazia italiana fornendo:
 
 ## 3. Architettura del Backend
 
-### 3.1 Struttura attuale (scaffold)
+### 3.1 Struttura attuale
 
 ```
 backend/
 ├── api/
-│   └── v1/          # Router FastAPI — da popolare
+│   ├── deps.py      # Dipendenza get_current_user (JWT)
+│   └── v1/
+│       ├── auth.py       # register, token, refresh, me
+│       ├── chat.py       # POST /v1/chat (Ollama)
+│       ├── procedures.py # GET /v1/procedures, /{slug}, /{slug}/steps
+│       └── progress.py   # GET/PUT /v1/progress/{slug}
 ├── core/
-│   └── config.py    # Settings via pydantic-settings
-├── db/              # Session SQLAlchemy + setup Alembic
-├── models/          # Modelli ORM
-├── services/        # Business logic
+│   ├── config.py    # Settings via pydantic-settings
+│   └── rate_limit.py # Sliding window in-memory
+├── db/              # Session SQLAlchemy async
+├── models/          # ORM: Procedure, Step, Document, User, UserProgress
+├── schemas/         # Pydantic response schemas
+├── services/        # ai_service, auth_service, procedure_service
 └── main.py          # Entry point FastAPI
 ```
 
@@ -120,23 +127,26 @@ FastAPI Backend
 - [x] CI GitHub Actions (lint + test)
 - [x] Prima migrazione Alembic (placeholder vuoto `a1b2c3d4e5f6` creato — schema reale definito in Fase 1)
 
-### Fase 1 — Procedure Core (MVP)
-- [ ] Definire schema JSON/YAML per una procedura (step, documenti, ufficio, tempi, costi)
-- [ ] Inserire prime procedure Cosenza (es. SCIA Edilizia, Permesso di Costruire)
-- [ ] Modello ORM: `Procedure`, `Step`, `Document`
-- [ ] API REST: `GET /v1/procedures`, `GET /v1/procedures/{id}`, `GET /v1/procedures/{id}/steps`
-- [ ] Seed DB con dati iniziali
+### Fase 1 — Procedure Core (completata)
+- [x] Schema JSON per una procedura (step, documenti, ufficio, tempi, costi)
+- [x] Prime procedure Cosenza: SCIA Edilizia (7 step), Permesso di Costruire (10 step)
+- [x] Modello ORM: `Procedure`, `Step`, `Document`
+- [x] API REST: `GET /v1/procedures`, `GET /v1/procedures/{slug}`, `GET /v1/procedures/{slug}/steps`
+- [x] Service JSON-backed (no DB richiesto in CI)
 
-### Fase 2 — Assistente AI
-- [ ] Integrazione Ollama: servizio `AIService` con client HTTPX
-- [ ] Endpoint `POST /v1/chat` (context-aware sulla procedura attiva)
-- [ ] Prompt engineering per risposte focalizzate su pratica burocratica
-- [ ] Rate limiting / gestione errori Ollama
+### Fase 2 — Assistente AI (completata)
+- [x] `AIService`: client HTTPX asincrono verso Ollama `/api/chat`
+- [x] `POST /v1/chat` context-aware: system prompt arricchito con dati procedura attiva
+- [x] Prompt engineering focalizzato su burocrazia Cosenza, con "non so" esplicito
+- [x] Rate limiting sliding window 10 req/min per IP (in-memory, no dipendenze esterne)
+- [x] Gestione errori: `ConnectError`, `Timeout`, `HTTPStatusError` → HTTP 503
 
-### Fase 3 — Autenticazione & Utenti
-- [ ] Modello `User` + JWT auth (FastAPI OAuth2)
-- [ ] Endpoint registrazione / login / refresh token
-- [ ] Salvataggio progresso utente per pratica (procedura in corso, step completati)
+### Fase 3 — Autenticazione & Utenti (completata)
+- [x] Modelli `User` e `UserProgress` (timezone-aware, cascade delete)
+- [x] JWT: access token (30 min) + refresh token (30 giorni), `type` claim per distinguerli
+- [x] `POST /v1/auth/register`, `/token` (OAuth2), `/refresh`; `GET /v1/auth/me`
+- [x] `GET/PUT /v1/progress/{slug}` — salvataggio step completati per utente autenticato
+- [x] Test con SQLite in-memory isolato per fixture (conftest.py)
 
 ### Fase 4 — App Flutter (MVP)
 - [ ] Setup progetto Flutter
@@ -197,7 +207,7 @@ Ogni procedura è descritta da:
 | RISK-03 | Conformità | Informazioni burocratiche errate possono causare problemi reali all'utente — disclaimer + revisione umana | Alta |
 | RISK-04 | Offline | App Flutter deve funzionare parzialmente offline — strategia cache da definire | Media |
 | RISK-05 | Auth | JWT secret key management in produzione — usare secrets manager | Media |
-| RISK-06 | CI | Il job `test` in CI imposta `DATABASE_URL` ma non avvia un container Postgres — i test DB falliranno in CI quando aggiunti | Media |
+| RISK-06 | CI | Il job `test` imposta `DATABASE_URL` senza avviare Postgres — risolto in fase 3 usando SQLite in-memory per i test DB-backed | Chiuso |
 | RISK-07 | Deploy | Il `Dockerfile` avvia direttamente uvicorn senza eseguire `alembic upgrade head` — lo schema DB non viene creato automaticamente all'avvio del container | Media |
 
 ---
