@@ -7,6 +7,7 @@ from alembic import context
 from backend.core.config import settings
 from backend.db.base import Base
 from backend.models.procedure import Document, Procedure, Step  # noqa: F401
+from backend.models.user import User, UserProgress  # noqa: F401
 
 config = context.config
 
