@@ -1,6 +1,6 @@
 # Navigatore Burocratico — Analisi Tecnica
 
-**Versione documento:** 0.2
+**Versione documento:** 0.3
 **Data:** 2026-03-27
 **Stato:** Draft
 
@@ -106,6 +106,8 @@ FastAPI Backend
 | `DATABASE_URL` | URI connessione al DB |
 | `OLLAMA_BASE_URL` | URL base istanza Ollama (es. `http://localhost:11434`) |
 | `OLLAMA_MODEL` | Nome modello Ollama (es. `llama3`, `mistral`) |
+| `POSTGRES_USER` | Utente PostgreSQL (Docker Compose) |
+| `POSTGRES_PASSWORD` | Password PostgreSQL (Docker Compose) |
 
 ---
 
@@ -116,7 +118,7 @@ FastAPI Backend
 - [x] Struttura cartelle procedure (calabria/cosenza)
 - [x] Setup Docker Compose (backend + PostgreSQL)
 - [x] CI GitHub Actions (lint + test)
-- [ ] Prima migrazione Alembic (tabelle base — placeholder vuoto creato, schema da definire in Fase 1)
+- [x] Prima migrazione Alembic (placeholder vuoto `a1b2c3d4e5f6` creato — schema reale definito in Fase 1)
 
 ### Fase 1 — Procedure Core (MVP)
 - [ ] Definire schema JSON/YAML per una procedura (step, documenti, ufficio, tempi, costi)
