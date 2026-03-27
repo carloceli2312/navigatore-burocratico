@@ -1,6 +1,6 @@
 # Navigatore Burocratico — Analisi Tecnica
 
-**Versione documento:** 0.1
+**Versione documento:** 0.2
 **Data:** 2026-03-27
 **Stato:** Draft
 
@@ -47,7 +47,7 @@ L'obiettivo è abbattere la complessità della burocrazia italiana fornendo:
 
 | Componente | Tecnologia |
 |---|---|
-| Database | PostgreSQL (prod) / SQLite (dev) |
+| Database | PostgreSQL (prod + dev via Docker) |
 | Container | Docker + Docker Compose |
 | CI/CD | GitHub Actions |
 | Deploy backend | TBD (VPS / Railway / Render) |
@@ -111,12 +111,12 @@ FastAPI Backend
 
 ## 5. Roadmap
 
-### Fase 0 — Fondamenta (in corso)
+### Fase 0 — Fondamenta (completata)
 - [x] Scaffold backend (FastAPI, SQLAlchemy, Alembic, config)
 - [x] Struttura cartelle procedure (calabria/cosenza)
-- [ ] Setup Docker Compose (backend + PostgreSQL)
-- [ ] Prima migrazione Alembic (tabelle base)
-- [ ] CI GitHub Actions (lint + test)
+- [x] Setup Docker Compose (backend + PostgreSQL)
+- [x] CI GitHub Actions (lint + test)
+- [ ] Prima migrazione Alembic (tabelle base — placeholder vuoto creato, schema da definire in Fase 1)
 
 ### Fase 1 — Procedure Core (MVP)
 - [ ] Definire schema JSON/YAML per una procedura (step, documenti, ufficio, tempi, costi)
@@ -195,13 +195,15 @@ Ogni procedura è descritta da:
 | RISK-03 | Conformità | Informazioni burocratiche errate possono causare problemi reali all'utente — disclaimer + revisione umana | Alta |
 | RISK-04 | Offline | App Flutter deve funzionare parzialmente offline — strategia cache da definire | Media |
 | RISK-05 | Auth | JWT secret key management in produzione — usare secrets manager | Media |
+| RISK-06 | CI | Il job `test` in CI imposta `DATABASE_URL` ma non avvia un container Postgres — i test DB falliranno in CI quando aggiunti | Media |
+| RISK-07 | Deploy | Il `Dockerfile` avvia direttamente uvicorn senza eseguire `alembic upgrade head` — lo schema DB non viene creato automaticamente all'avvio del container | Media |
 
 ---
 
 ## 8. Convenzioni di Sviluppo
 
-- **Branch**: `main` (stabile) → PR da feature branch
+- **Branch**: `main` (stabile) → PR da branch `fase-N`; `docs` per documentazione
 - **Commit**: Conventional Commits (`feat:`, `fix:`, `chore:`, `docs:`)
-- **Linting**: da configurare (ruff / black per Python, dart format per Flutter)
+- **Linting**: ruff (configurato in `pyproject.toml`, regole E/F/I, line-length 100); dart format per Flutter (TBD)
 - **Test**: pytest + pytest-asyncio per backend; flutter test per mobile
 - **Lingua codice**: inglese (nomi variabili, commenti, commit); italiano per documentazione utente e dati procedure
