@@ -1,0 +1,167 @@
+{
+  "slug": "scia-edilizia-cosenza",
+  "name": "SCIA Edilizia",
+  "category": "edilizia",
+  "description": "Segnalazione Certificata di Inizio Attività per interventi edilizi minori (ristrutturazione, manutenzione straordinaria, cambio destinazione d'uso) nel Comune di Cosenza. I lavori possono iniziare il giorno stesso della presentazione.",
+  "ente_competente": "Comune di Cosenza — Sportello Unico per l'Edilizia (SUE)",
+  "tags": ["edilizia", "privato", "impresa", "ristrutturazione"],
+  "tempo_stimato_giorni": 30,
+  "costo_stimato_eur": 350.0,
+  "steps": [
+    {
+      "order": 1,
+      "title": "Verifica la procedura corretta",
+      "description": "Accertati che la SCIA sia la procedura adatta al tuo intervento. La SCIA si usa per ristrutturazioni edilizie, manutenzione straordinaria, cambio di destinazione d'uso con opere. Per nuove costruzioni o ampliamenti rilevanti serve il Permesso di Costruire. Consulta un tecnico abilitato (geometra, architetto o ingegnere) per la valutazione preliminare.",
+      "ufficio": "Sportello Unico per l'Edilizia — Comune di Cosenza",
+      "costo_stimato_eur": null,
+      "tempo_stimato_giorni": 3,
+      "documents": [
+        {
+          "name": "Planimetria catastale dell'immobile",
+          "required": true,
+          "notes": "Aggiornata, da richiedere all'Agenzia delle Entrate o Catasto"
+        }
+      ]
+    },
+    {
+      "order": 2,
+      "title": "Incarica un tecnico abilitato",
+      "description": "La SCIA deve essere sottoscritta da un tecnico abilitato (geometra, architetto, ingegnere iscritto all'albo) che assevera la conformità del progetto alle norme urbanistiche ed edilizie vigenti. Il tecnico predispone tutti gli elaborati progettuali e la relazione asseverata.",
+      "ufficio": null,
+      "costo_stimato_eur": 800.0,
+      "tempo_stimato_giorni": 14,
+      "documents": [
+        {
+          "name": "Elaborati grafici (piante, prospetti, sezioni — stato attuale e progetto)",
+          "required": true,
+          "notes": "Firmati e timbrati dal tecnico abilitato"
+        },
+        {
+          "name": "Relazione tecnica asseverata",
+          "required": true,
+          "notes": "Attesta la conformità al PRG, NTA e normativa vigente"
+        },
+        {
+          "name": "Computo metrico estimativo dei lavori",
+          "required": false,
+          "notes": "Necessario per il calcolo degli oneri di urbanizzazione"
+        }
+      ]
+    },
+    {
+      "order": 3,
+      "title": "Raccoglie i documenti anagrafici e di proprietà",
+      "description": "Prepara la documentazione che attesta la tua identità e il diritto a intervenire sull'immobile.",
+      "ufficio": "Comune di Cosenza — Ufficio Anagrafe (per estratti)",
+      "costo_stimato_eur": 20.0,
+      "tempo_stimato_giorni": 5,
+      "documents": [
+        {
+          "name": "Documento di identità in corso di validità",
+          "required": true,
+          "notes": null
+        },
+        {
+          "name": "Codice fiscale",
+          "required": true,
+          "notes": null
+        },
+        {
+          "name": "Titolo di proprietà (atto notarile o visura catastale)",
+          "required": true,
+          "notes": "In alternativa, contratto di locazione con autorizzazione scritta del proprietario"
+        },
+        {
+          "name": "Visura catastale aggiornata",
+          "required": true,
+          "notes": "Da richiedere all'Agenzia delle Entrate"
+        }
+      ]
+    },
+    {
+      "order": 4,
+      "title": "Versa i diritti di segreteria e gli oneri",
+      "description": "Prima di presentare la pratica, paga i diritti di segreteria dovuti al Comune di Cosenza e, se previsti, gli oneri di urbanizzazione. I pagamenti si effettuano tramite F24 o bonifico sul conto comunale.",
+      "ufficio": "Comune di Cosenza — Ufficio Tributi / Sportello Unico Edilizia",
+      "costo_stimato_eur": 330.0,
+      "tempo_stimato_giorni": 2,
+      "documents": [
+        {
+          "name": "Ricevuta versamento diritti di segreteria",
+          "required": true,
+          "notes": "Importo variabile in base all'intervento — verificare tariffario comunale vigente"
+        },
+        {
+          "name": "Ricevuta versamento oneri di urbanizzazione (se dovuti)",
+          "required": false,
+          "notes": "Dovuti per cambi di destinazione d'uso o ampliamenti di superficie"
+        }
+      ]
+    },
+    {
+      "order": 5,
+      "title": "Presenta la SCIA allo Sportello Unico Edilizia",
+      "description": "Deposita la pratica completa allo Sportello Unico per l'Edilizia del Comune di Cosenza. La presentazione avviene tramite il portale telematico Suap/Sue regionale oppure allo sportello fisico. Una volta protocollata, i lavori possono iniziare immediatamente.",
+      "ufficio": "Comune di Cosenza — Sportello Unico per l'Edilizia (SUE), Piazza dei Bruzi 4",
+      "costo_stimato_eur": null,
+      "tempo_stimato_giorni": 1,
+      "documents": [
+        {
+          "name": "Modulo SCIA compilato e firmato",
+          "required": true,
+          "notes": "Modulo unificato nazionale — scaricabile dal sito del Comune o del MIT"
+        },
+        {
+          "name": "Tutta la documentazione raccolta nei passi precedenti",
+          "required": true,
+          "notes": "In copia digitale (PDF/A) per presentazione telematica"
+        }
+      ]
+    },
+    {
+      "order": 6,
+      "title": "Esegui i lavori e conserva la documentazione",
+      "description": "I lavori possono iniziare il giorno stesso della presentazione della SCIA. Tieni in cantiere copia della SCIA protocollata e di tutta la documentazione allegata. Il Comune ha 30 giorni per verificare e, in caso di difformità, può ordinare la sospensione o la rimessa in pristino.",
+      "ufficio": null,
+      "costo_stimato_eur": null,
+      "tempo_stimato_giorni": null,
+      "documents": [
+        {
+          "name": "Copia SCIA protocollata (da tenere in cantiere)",
+          "required": true,
+          "notes": null
+        },
+        {
+          "name": "Cartello di cantiere",
+          "required": true,
+          "notes": "Con dati del committente, tecnico, impresa e numero di protocollo SCIA"
+        }
+      ]
+    },
+    {
+      "order": 7,
+      "title": "Comunica la fine lavori e richiedi l'agibilità (se necessario)",
+      "description": "Al termine dei lavori, presenta la Comunicazione di Fine Lavori (CFL) al SUE. Se l'intervento ha modificato la superficie, il volume o la destinazione d'uso, è necessario richiedere il Certificato di Agibilità.",
+      "ufficio": "Comune di Cosenza — Sportello Unico per l'Edilizia (SUE)",
+      "costo_stimato_eur": null,
+      "tempo_stimato_giorni": 5,
+      "documents": [
+        {
+          "name": "Comunicazione di Fine Lavori firmata dal tecnico",
+          "required": true,
+          "notes": null
+        },
+        {
+          "name": "Certificato di collaudo statico (per lavori strutturali)",
+          "required": false,
+          "notes": "Obbligatorio se sono state realizzate opere strutturali"
+        },
+        {
+          "name": "Aggiornamento planimetrie catastali (Docfa)",
+          "required": false,
+          "notes": "Necessario se sono variati i dati catastali"
+        }
+      ]
+    }
+  ]
+}
