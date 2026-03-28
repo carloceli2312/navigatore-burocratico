@@ -1,17 +1,31 @@
-# navigatore_burocratico
+# navigatore_burocratico — Mobile
 
-A new Flutter project.
+Flutter app (iOS + Android) for the Navigatore Burocratico project.
 
-## Getting Started
+## Running the app
 
-This project is a starting point for a Flutter application.
+See the [root README](../README.md) for full setup instructions (backend + Flutter).
 
-A few resources to get you started if this is your first Flutter project:
+Quick reference:
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+```bash
+# Android emulator (tunnels port to host)
+adb reverse tcp:8000 tcp:8000
+flutter run
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# Physical device (replace with your PC's local IP)
+flutter run --dart-define=API_BASE_URL=http://<YOUR_PC_IP>:8000
+```
+
+## Project structure
+
+```
+mobile/lib/
+├── core/           # Constants, theme, shared utilities
+├── features/
+│   ├── auth/       # Login and registration
+│   ├── home/       # Procedure list
+│   ├── procedure/  # Step-by-step procedure flow
+│   └── chat/       # AI assistant
+└── main.dart
+```
