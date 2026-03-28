@@ -61,6 +61,7 @@ class _ChatScreenState extends State<ChatScreen> {
     }
 
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       appBar: AppBar(
         title: const Text('Assistente AI'),
         actions: [
@@ -142,7 +143,9 @@ class _ChatScreenState extends State<ChatScreen> {
               left: 16,
               right: 8,
               top: 8,
-              bottom: 8 + MediaQuery.of(context).viewInsets.bottom,
+              bottom: 8 +
+                  MediaQuery.of(context).viewInsets.bottom +
+                  MediaQuery.of(context).padding.bottom,
             ),
             child: Row(
               children: [
