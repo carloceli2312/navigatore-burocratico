@@ -39,6 +39,20 @@ docker-compose.override.yml
 .DS_Store
 Thumbs.db
 
+# Flutter / Dart
+mobile/.dart_tool/
+mobile/.flutter-plugins
+mobile/.flutter-plugins-dependencies
+mobile/build/
+mobile/.packages
+mobile/android/.gradle/
+mobile/android/local.properties
+mobile/android/key.properties
+mobile/ios/Pods/
+mobile/ios/.symlinks/
+mobile/**/*.g.dart
+mobile/**/*.freezed.dart
+
 # Claude
 .claude/
 CLAUDE.md
