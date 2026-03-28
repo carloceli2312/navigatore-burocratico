@@ -5,103 +5,131 @@ class ProcedureCard extends StatelessWidget {
   final Procedure procedure;
   final VoidCallback onTap;
 
-  const ProcedureCard({
-    super.key,
-    required this.procedure,
-    required this.onTap,
-  });
+  const ProcedureCard({super.key, required this.procedure, required this.onTap});
 
   @override
   Widget build(BuildContext context) {
-    final theme = Theme.of(context);
-    return Card(
-      margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
-      elevation: 2,
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-      child: InkWell(
-        onTap: onTap,
-        borderRadius: BorderRadius.circular(12),
-        child: Padding(
-          padding: const EdgeInsets.all(16),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Row(
+    final style = _categoryStyle[procedure.category.toLowerCase()] ??
+        (emoji: '📋', background: const Color(0xFFE8F0FE));
+
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+        padding: const EdgeInsets.all(16),
+        decoration: BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.circular(16),
+          border: Border.all(color: const Color(0xFFF0F4F8)),
+          boxShadow: [
+            BoxShadow(
+              color: Colors.black.withAlpha(13),
+              blurRadius: 8,
+              offset: const Offset(0, 2),
+            ),
+          ],
+        ),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Container(
+              width: 44,
+              height: 44,
+              decoration: BoxDecoration(
+                color: style.background,
+                borderRadius: BorderRadius.circular(12),
+              ),
+              child: Center(child: Text(style.emoji, style: const TextStyle(fontSize: 20))),
+            ),
+            const SizedBox(width: 14),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Chip(
-                    label: Text(
-                      procedure.category.toUpperCase(),
-                      style: theme.textTheme.labelSmall?.copyWith(
-                        fontWeight: FontWeight.bold,
-                        color: theme.colorScheme.onPrimary,
-                      ),
+                  Text(
+                    procedure.name,
+                    style: const TextStyle(
+                      fontSize: 14,
+                      fontWeight: FontWeight.w600,
+                      color: Color(0xFF1E293B),
                     ),
-                    backgroundColor: theme.colorScheme.primary,
-                    padding: EdgeInsets.zero,
-                    materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
                   ),
-                  const Spacer(),
-                  const Icon(Icons.chevron_right, color: Colors.grey),
+                  const SizedBox(height: 3),
+                  Text(
+                    procedure.description,
+                    style: const TextStyle(
+                      fontSize: 12,
+                      color: Color(0xFF94A3B8),
+                      height: 1.4,
+                    ),
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
+                  ),
+                  const SizedBox(height: 8),
+                  Row(
+                    children: [
+                      if (procedure.tempoStimatoGiorni != null)
+                        _Badge(
+                          label: '~${procedure.tempoStimatoGiorni} gg',
+                          background: const Color(0xFFF0FDF4),
+                          color: const Color(0xFF16A34A),
+                        ),
+                      if (procedure.tempoStimatoGiorni != null && procedure.costoStimatoEur != null)
+                        const SizedBox(width: 6),
+                      if (procedure.costoStimatoEur != null)
+                        _Badge(
+                          label: '€${procedure.costoStimatoEur!.toStringAsFixed(0)}',
+                          background: const Color(0xFFE8F0FE),
+                          color: const Color(0xFF3B5FC0),
+                        ),
+                    ],
+                  ),
                 ],
               ),
-              const SizedBox(height: 8),
-              Text(
-                procedure.name,
-                style: theme.textTheme.titleMedium?.copyWith(
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-              const SizedBox(height: 4),
-              Text(
-                procedure.enteCompetente,
-                style: theme.textTheme.bodySmall?.copyWith(color: Colors.grey[600]),
-              ),
-              const SizedBox(height: 12),
-              Row(
-                children: [
-                  if (procedure.tempoStimatoGiorni != null)
-                    _InfoChip(
-                      icon: Icons.schedule,
-                      label: '~${procedure.tempoStimatoGiorni} gg',
-                    ),
-                  if (procedure.tempoStimatoGiorni != null && procedure.costoStimatoEur != null)
-                    const SizedBox(width: 8),
-                  if (procedure.costoStimatoEur != null)
-                    _InfoChip(
-                      icon: Icons.euro,
-                      label: '~${procedure.costoStimatoEur!.toStringAsFixed(0)} €',
-                    ),
-                ],
-              ),
-            ],
-          ),
+            ),
+            const SizedBox(width: 8),
+            const Icon(Icons.chevron_right, color: Color(0xFFCBD5E1), size: 20),
+          ],
         ),
       ),
     );
   }
 }
 
-class _InfoChip extends StatelessWidget {
-  final IconData icon;
-  final String label;
+typedef _CategoryStyle = ({String emoji, Color background});
 
-  const _InfoChip({required this.icon, required this.label});
+const Map<String, _CategoryStyle> _categoryStyle = {
+  'edilizia': (emoji: '🏗️', background: Color(0xFFE8F0FE)),
+  'anagrafe': (emoji: '🪪', background: Color(0xFFFFF8E6)),
+  'fisco': (emoji: '💰', background: Color(0xFFE6F9F0)),
+  'lavoro': (emoji: '💼', background: Color(0xFFFFF8E6)),
+  'ambiente': (emoji: '🌿', background: Color(0xFFE6F9F0)),
+};
+
+class _Badge extends StatelessWidget {
+  final String label;
+  final Color background;
+  final Color color;
+
+  const _Badge({required this.label, required this.background, required this.color});
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
       decoration: BoxDecoration(
-        color: Colors.grey[100],
+        color: background,
         borderRadius: BorderRadius.circular(8),
       ),
-      child: Row(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Icon(icon, size: 14, color: Colors.grey[600]),
-          const SizedBox(width: 4),
-          Text(label, style: TextStyle(fontSize: 12, color: Colors.grey[700])),
-        ],
+      child: Text(
+        label,
+        style: TextStyle(
+          fontSize: 10,
+          fontWeight: FontWeight.w500,
+          color: color,
+          letterSpacing: 0.3,
+        ),
       ),
     );
   }
