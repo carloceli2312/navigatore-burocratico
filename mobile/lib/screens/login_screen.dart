@@ -123,14 +123,13 @@ class _LoginScreenState extends State<LoginScreen>
                           color: Colors.white,
                         ),
                       )
-                    : TabBarView(
-                        controller: _tabController,
-                        physics: const NeverScrollableScrollPhysics(),
-                        children: const [
-                          Text('Accedi', textAlign: TextAlign.center),
-                          Text('Registrati', textAlign: TextAlign.center),
-                        ],
+                    : AnimatedBuilder(
+                      animation: _tabController,
+                      builder: (_, __) => Text(
+                        _tabController.index == 0 ? 'Accedi' : 'Registrati',
+                        textAlign: TextAlign.center,
                       ),
+                    ),
               ),
               const SizedBox(height: 12),
               TextButton(
