@@ -11,6 +11,7 @@ class ProceduresProvider extends ChangeNotifier {
   List<Procedure> _procedures = [];
   Procedure? _detail;
   bool _isLoading = false;
+  bool _initialized = false;
   bool _isOffline = false;
   String? _error;
 
@@ -22,6 +23,7 @@ class ProceduresProvider extends ChangeNotifier {
   List<Procedure> get procedures => _procedures;
   Procedure? get detail => _detail;
   bool get isLoading => _isLoading;
+  bool get initialized => _initialized;
   bool get isOffline => _isOffline;
   String? get error => _error;
 
@@ -47,7 +49,10 @@ class ProceduresProvider extends ChangeNotifier {
       } else {
         _error = 'Impossibile caricare le procedure. Controlla la connessione.';
       }
+    } catch (_) {
+      _error = 'Errore durante il caricamento delle procedure.';
     } finally {
+      _initialized = true;
       _setLoading(false);
     }
   }
