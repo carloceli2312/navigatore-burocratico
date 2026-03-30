@@ -18,11 +18,10 @@ class ProcedureCard extends StatelessWidget {
         padding: const EdgeInsets.all(16),
         decoration: BoxDecoration(
           color: Colors.white,
-          borderRadius: BorderRadius.circular(16),
-          border: Border.all(color: const Color(0xFFF0F4F8)),
+          borderRadius: BorderRadius.circular(14),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withAlpha(13),
+              color: Colors.black.withAlpha(10),
               blurRadius: 8,
               offset: const Offset(0, 2),
             ),
@@ -71,7 +70,8 @@ class ProcedureCard extends StatelessWidget {
                     children: [
                       if (procedure.tempoStimatoGiorni != null)
                         _Badge(
-                          label: '~${procedure.tempoStimatoGiorni} gg',
+                          label: '${procedure.tempoStimatoGiorni} gg',
+                          icon: Icons.schedule_rounded,
                           background: const Color(0xFFF0FDF4),
                           color: const Color(0xFF16A34A),
                         ),
@@ -80,8 +80,9 @@ class ProcedureCard extends StatelessWidget {
                       if (procedure.costoStimatoEur != null)
                         _Badge(
                           label: '€${procedure.costoStimatoEur!.toStringAsFixed(0)}',
-                          background: const Color(0xFFE8F0FE),
-                          color: const Color(0xFF3B5FC0),
+                          icon: Icons.euro_rounded,
+                          background: const Color(0xFFFFF8E6),
+                          color: const Color(0xFFD97706),
                         ),
                     ],
                   ),
@@ -109,27 +110,40 @@ const Map<String, _CategoryStyle> _categoryStyle = {
 
 class _Badge extends StatelessWidget {
   final String label;
+  final IconData icon;
   final Color background;
   final Color color;
 
-  const _Badge({required this.label, required this.background, required this.color});
+  const _Badge({
+    required this.label,
+    required this.icon,
+    required this.background,
+    required this.color,
+  });
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+      padding: const EdgeInsets.symmetric(horizontal: 7, vertical: 3),
       decoration: BoxDecoration(
         color: background,
-        borderRadius: BorderRadius.circular(8),
+        borderRadius: BorderRadius.circular(6),
       ),
-      child: Text(
-        label,
-        style: TextStyle(
-          fontSize: 10,
-          fontWeight: FontWeight.w500,
-          color: color,
-          letterSpacing: 0.3,
-        ),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Icon(icon, size: 10, color: color),
+          const SizedBox(width: 3),
+          Text(
+            label,
+            style: TextStyle(
+              fontSize: 10,
+              fontWeight: FontWeight.w500,
+              color: color,
+              letterSpacing: 0.2,
+            ),
+          ),
+        ],
       ),
     );
   }
