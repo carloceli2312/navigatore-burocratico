@@ -1,0 +1,47 @@
+{
+  "slug": "certificato-residenza-cosenza",
+  "name": "Certificato di Residenza",
+  "category": "anagrafe",
+  "description": "Il certificato di residenza attesta il luogo in cui il cittadino ha la propria dimora abituale. È uno dei documenti anagrafici più richiesti, utilizzato per pratiche burocratiche, contratti, borse di studio e richieste di agevolazioni. I certificati anagrafici di base, compreso questo, possono essere scaricati gratuitamente online tramite ANPR senza bisogno di recarsi allo sportello.",
+  "ente_competente": "Comune di Cosenza — Ufficio Anagrafe / ANPR (Anagrafe Nazionale Popolazione Residente)",
+  "tags": ["anagrafe", "certificato", "residenza", "privato"],
+  "tempo_stimato_giorni": 1,
+  "costo_stimato_eur": 0.0,
+  "steps": [
+    {
+      "order": 1,
+      "title": "Scarica il certificato online tramite ANPR (gratuito)",
+      "description": "Se sei residente a Cosenza, puoi scaricare il certificato di residenza gratuitamente e autonomamente dal portale ANPR (anagrafenazionale.interno.it) con SPID, CIE o CNS. Il certificato è immediatamente disponibile in formato PDF con firma digitale e timbro elettronico. È esente da bollo per i casi previsti dalla legge (uso personale, lavoro, previdenza). Per uso verso la PA, i certificati sostitutivi di autocertificazione sono sempre accettati e gratuiti.",
+      "ufficio": "Portale ANPR online — anagrafenazionale.interno.it",
+      "costo_stimato_eur": 0.0,
+      "tempo_stimato_giorni": 1,
+      "documents": [
+        {
+          "name": "Identità digitale (SPID, CIE o CNS)",
+          "required": true,
+          "notes": "Accesso tramite uno dei sistemi di identità digitale italiani"
+        }
+      ]
+    },
+    {
+      "order": 2,
+      "title": "(Alternativa) Richiesta allo sportello Anagrafe",
+      "description": "Se non disponi di SPID/CIE o hai bisogno del certificato in formato cartaceo con timbro fisico, puoi richiederlo direttamente allo sportello Anagrafe del Comune di Cosenza. Il rilascio è immediato. Attenzione: se il certificato è destinato a un ente privato (banca, assicurazione, ecc.) potrebbe richiedere la marca da bollo da € 16,00.",
+      "ufficio": "Comune di Cosenza — Ufficio Anagrafe, Piazza dei Bruzi 4",
+      "costo_stimato_eur": 16.0,
+      "tempo_stimato_giorni": 1,
+      "documents": [
+        {
+          "name": "Documento di identità valido",
+          "required": true,
+          "notes": null
+        },
+        {
+          "name": "Marca da bollo da € 16,00",
+          "required": false,
+          "notes": "Solo se il certificato è destinato a enti privati o uso non esente"
+        }
+      ]
+    }
+  ]
+}

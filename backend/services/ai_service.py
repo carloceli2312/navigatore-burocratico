@@ -1,4 +1,5 @@
 import httpx
+from sqlalchemy.ext.asyncio import AsyncSession
 
 from backend.core.config import settings
 from backend.services.procedure_service import ProcedureNotFound, get_procedure
@@ -39,12 +40,12 @@ async def _call_ollama(payload: dict) -> dict:
             ) from exc
 
 
-def _build_system_prompt(procedure_slug: str | None) -> str:
+async def _build_system_prompt(procedure_slug: str | None, db: AsyncSession) -> str:
     if not procedure_slug:
         return _SYSTEM_PROMPT
 
     try:
-        proc = get_procedure(procedure_slug)
+        proc = await get_procedure(procedure_slug, db)
     except ProcedureNotFound:
         return _SYSTEM_PROMPT
 
@@ -59,8 +60,8 @@ def _build_system_prompt(procedure_slug: str | None) -> str:
     return _SYSTEM_PROMPT + context
 
 
-async def ask(message: str, procedure_slug: str | None = None) -> str:
-    system_prompt = _build_system_prompt(procedure_slug)
+async def ask(message: str, db: AsyncSession, procedure_slug: str | None = None) -> str:
+    system_prompt = await _build_system_prompt(procedure_slug, db)
     payload = {
         "model": settings.ollama_model,
         "messages": [

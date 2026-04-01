@@ -1,0 +1,56 @@
+{
+  "slug": "cila-cosenza",
+  "name": "CILA — Comunicazione di Inizio Lavori Asseverata",
+  "category": "edilizia",
+  "description": "La CILA (Comunicazione di Inizio Lavori Asseverata) è il titolo edilizio per interventi di manutenzione straordinaria che non riguardano le parti strutturali dell'edificio e non modificano la volumetria complessiva. Esempi tipici: rifacimento bagni con spostamento impianti, cambio di destinazione d'uso senza opere strutturali, realizzazione di nuove aperture interne. La CILA ha efficacia immediata alla presentazione e non prevede tempi di attesa. Attenzione: a Cosenza, in zona sismica 2, qualsiasi intervento strutturale richiede anche il procedimento antisismico tramite CalabriaSUE.",
+  "ente_competente": "Comune di Cosenza — Sportello Unico per l'Edilizia (SUE)",
+  "tags": ["edilizia", "cila", "manutenzione-straordinaria", "privato", "impresa"],
+  "tempo_stimato_giorni": 1,
+  "costo_stimato_eur": 300.0,
+  "steps": [
+    {
+      "order": 1,
+      "title": "Incarica un tecnico abilitato",
+      "description": "La CILA richiede l'asseverazione di un tecnico abilitato (geometra, ingegnere o architetto iscritto all'albo). Il tecnico verifica la conformità dell'intervento alle norme urbanistiche ed edilizie vigenti, redige la relazione tecnica e assevera sotto la propria responsabilità che i lavori non riguardano le parti strutturali. Il costo della prestazione professionale dipende dalla complessità dell'intervento.",
+      "ufficio": null,
+      "costo_stimato_eur": null,
+      "tempo_stimato_giorni": 7,
+      "documents": []
+    },
+    {
+      "order": 2,
+      "title": "Presenta la CILA al SUE del Comune",
+      "description": "La CILA può essere presentata telematicamente tramite il portale CalabriaSUE (calabriasue.it) o direttamente allo Sportello SUE del Comune di Cosenza. Va presentata prima dell'inizio dei lavori. I lavori possono iniziare contestualmente alla presentazione: non è previsto alcun periodo di attesa. Il Comune ha 30 giorni per eventuali comunicazioni di archiviazione in caso di irregolarità.",
+      "ufficio": "Comune di Cosenza — SUE, Piazza dei Bruzi 4 / portale CalabriaSUE",
+      "costo_stimato_eur": 116.0,
+      "tempo_stimato_giorni": 1,
+      "documents": [
+        {
+          "name": "Modulo CILA (modello unificato regionale)",
+          "required": true,
+          "notes": "Con firma del proprietario e del tecnico progettista"
+        },
+        {
+          "name": "Relazione tecnica asseverata del professionista",
+          "required": true,
+          "notes": "Attesta che i lavori non interessano le parti strutturali"
+        },
+        {
+          "name": "Elaborati grafici (planimetrie stato attuale e di progetto)",
+          "required": true,
+          "notes": "Con indicazione degli interventi previsti"
+        },
+        {
+          "name": "Ricevuta versamento oneri (diritti di segreteria)",
+          "required": true,
+          "notes": "Importo variabile, verificare tariffario SUE Cosenza vigente"
+        },
+        {
+          "name": "Titolo di proprietà o disponibilità dell'immobile",
+          "required": true,
+          "notes": "Visura catastale o atto notarile"
+        }
+      ]
+    }
+  ]
+}

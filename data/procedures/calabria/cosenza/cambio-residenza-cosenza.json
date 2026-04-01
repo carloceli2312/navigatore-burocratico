@@ -1,0 +1,65 @@
+{
+  "slug": "cambio-residenza-cosenza",
+  "name": "Cambio di Residenza (Iscrizione Anagrafica)",
+  "category": "anagrafe",
+  "description": "Il cambio di residenza è la procedura per spostare ufficialmente la propria dimora abituale al Comune di Cosenza, o per aggiornare l'indirizzo all'interno del Comune. Va effettuato entro 20 giorni dal trasferimento. Il Comune ha 45 giorni per effettuare gli accertamenti; trascorso questo termine senza rilievi, l'iscrizione si intende confermata. La dichiarazione può essere presentata anche online.",
+  "ente_competente": "Comune di Cosenza — Ufficio Anagrafe",
+  "tags": ["anagrafe", "residenza", "trasferimento", "privato"],
+  "tempo_stimato_giorni": 45,
+  "costo_stimato_eur": 0.0,
+  "steps": [
+    {
+      "order": 1,
+      "title": "Presenta la dichiarazione di cambio residenza",
+      "description": "Entro 20 giorni dall'effettivo trasferimento, presenta la dichiarazione di cambio di residenza. Puoi farlo in tre modi: (1) online tramite il portale del Comune di Cosenza o PEC all'indirizzo anagrafe.cosenza@pec.it allegando i documenti scansionati; (2) allo sportello Anagrafe; (3) tramite raccomandata A/R. La dichiarazione deve riguardare tutti i componenti del nucleo familiare che si trasferiscono.",
+      "ufficio": "Comune di Cosenza — Ufficio Anagrafe, Piazza dei Bruzi 4 (o online/PEC)",
+      "costo_stimato_eur": 0.0,
+      "tempo_stimato_giorni": 1,
+      "documents": [
+        {
+          "name": "Modulo dichiarazione cambio di residenza (Mod. AP/1)",
+          "required": true,
+          "notes": "Scaricabile dal sito del Comune o disponibile allo sportello"
+        },
+        {
+          "name": "Documento di identità valido di tutti i componenti del nucleo che si trasferiscono",
+          "required": true,
+          "notes": "Per i minori è sufficiente il documento di un genitore"
+        },
+        {
+          "name": "Codice fiscale di tutti i componenti",
+          "required": true,
+          "notes": null
+        },
+        {
+          "name": "Documentazione che attesta la disponibilità dell'immobile",
+          "required": false,
+          "notes": "Es. contratto di affitto, rogito, o dichiarazione del proprietario. Non obbligatoria ma utile per gli accertamenti"
+        },
+        {
+          "name": "Patente di guida e/o libretto di circolazione",
+          "required": false,
+          "notes": "Da aggiornare entro 30 giorni dall'iscrizione anagrafica presso la Motorizzazione o online"
+        }
+      ]
+    },
+    {
+      "order": 2,
+      "title": "Accertamento da parte della Polizia Municipale",
+      "description": "Entro 45 giorni dalla dichiarazione, un agente della Polizia Municipale di Cosenza effettuerà un sopralluogo per verificare l'effettiva dimora abituale nell'indirizzo dichiarato. Se l'accertamento è positivo, la residenza viene confermata automaticamente. In caso di esito negativo o irregolarità, il Comune avvia il procedimento di cancellazione e ne dà comunicazione. Assicurati di essere raggiungibile all'indirizzo dichiarato.",
+      "ufficio": "Polizia Municipale di Cosenza",
+      "costo_stimato_eur": null,
+      "tempo_stimato_giorni": 45,
+      "documents": []
+    },
+    {
+      "order": 3,
+      "title": "Aggiorna i documenti personali",
+      "description": "Dopo la conferma della residenza, aggiorna i documenti che riportano il vecchio indirizzo: patente di guida (online su portale MIT o tramite autoscuola), libretto di circolazione dei veicoli intestati (Motorizzazione Civile o online), tessera sanitaria (automaticamente aggiornata dall'ASP Cosenza), medico di base (può essere necessario cambiarlo se fuori distretto).",
+      "ufficio": "Motorizzazione Civile di Cosenza / ASP Cosenza",
+      "costo_stimato_eur": null,
+      "tempo_stimato_giorni": 30,
+      "documents": []
+    }
+  ]
+}

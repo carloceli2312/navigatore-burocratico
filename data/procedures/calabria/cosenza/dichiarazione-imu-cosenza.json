@@ -1,0 +1,61 @@
+{
+  "slug": "dichiarazione-imu-cosenza",
+  "name": "Dichiarazione IMU (Imposta Municipale Unica)",
+  "category": "tributi",
+  "description": "La dichiarazione IMU va presentata al Comune di Cosenza quando si verificano variazioni rilevanti ai fini del calcolo dell'imposta (acquisto, vendita, cambio d'uso, nuove agevolazioni, ecc.) che non risultano già dai dati catastali. Va presentata entro il 30 giugno dell'anno successivo a quello in cui si è verificata la variazione. L'abitazione principale (prima casa) è esente dall'IMU salvo che si tratti di immobili di lusso (categorie A/1, A/8, A/9).",
+  "ente_competente": "Comune di Cosenza — Ufficio Tributi",
+  "tags": ["tributi", "imu", "immobili", "privato", "impresa"],
+  "tempo_stimato_giorni": 30,
+  "costo_stimato_eur": 0.0,
+  "steps": [
+    {
+      "order": 1,
+      "title": "Verifica se sei obbligato alla dichiarazione",
+      "description": "La dichiarazione IMU è obbligatoria solo in caso di variazioni che il Comune non può ricavare autonomamente dalle banche dati (catasto, conservatoria, ecc.). Casi tipici che richiedono la dichiarazione: immobili acquistati o venduti con successione; immobili locati con contratto a canone concordato; immobili esenti per agevolazioni particolari; terreni agricoli. Gli acquisti/vendite ordinari registrati al catasto non richiedono dichiarazione separata.",
+      "ufficio": null,
+      "costo_stimato_eur": null,
+      "tempo_stimato_giorni": 1,
+      "documents": []
+    },
+    {
+      "order": 2,
+      "title": "Calcola e versa l'imposta (se dovuta)",
+      "description": "L'IMU va versata in due rate: acconto entro il 16 giugno (pari al 50% dell'importo dell'anno precedente) e saldo entro il 16 dicembre (a conguaglio con le aliquote deliberate dal Comune per l'anno in corso). Il versamento avviene tramite modello F24 (codici tributo specifici per IMU). Le aliquote del Comune di Cosenza vengono deliberate annualmente dalla Giunta e pubblicate sul sito istituzionale.",
+      "ufficio": "Agenzia delle Entrate / banca / home banking (per il versamento F24)",
+      "costo_stimato_eur": null,
+      "tempo_stimato_giorni": 1,
+      "documents": [
+        {
+          "name": "Modello F24 compilato",
+          "required": true,
+          "notes": "Con i codici tributo IMU corretti (3912 per abitazione principale se dovuta, 3914 per terreni, 3918 per altri fabbricati, ecc.)"
+        }
+      ]
+    },
+    {
+      "order": 3,
+      "title": "Presenta la dichiarazione IMU al Comune",
+      "description": "Se obbligato, presenta la dichiarazione IMU entro il 30 giugno dell'anno successivo alla variazione. Puoi presentarla: (1) online tramite il portale del Comune di Cosenza (Servizi Telematici Tributi); (2) allo sportello Ufficio Tributi; (3) tramite raccomandata A/R. Utilizza il modello ministeriale approvato con D.M. 29/07/2022 (aggiornato annualmente).",
+      "ufficio": "Comune di Cosenza — Ufficio Tributi",
+      "costo_stimato_eur": 0.0,
+      "tempo_stimato_giorni": 1,
+      "documents": [
+        {
+          "name": "Modello dichiarazione IMU (ministeriale)",
+          "required": true,
+          "notes": "Scaricabile dal sito del MEF o del Comune di Cosenza"
+        },
+        {
+          "name": "Visura catastale dell'immobile",
+          "required": true,
+          "notes": "Per verificare i dati catastali (categoria, rendita, quota di possesso)"
+        },
+        {
+          "name": "Atto notarile di acquisto/vendita/successione",
+          "required": false,
+          "notes": "Se la variazione è conseguente a un atto"
+        }
+      ]
+    }
+  ]
+}

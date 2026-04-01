@@ -1,0 +1,51 @@
+{
+  "slug": "domanda-naspi-cosenza",
+  "name": "Domanda NASpI — Indennità Mensile di Disoccupazione",
+  "category": "lavoro",
+  "description": "La NASpI (Nuova Assicurazione Sociale per l'Impiego) è l'indennità mensile di disoccupazione erogata dall'INPS ai lavoratori dipendenti che hanno perso involontariamente il lavoro. Ha una durata pari alla metà delle settimane contributive degli ultimi 4 anni (massimo 24 mesi). Va richiesta all'INPS entro 68 giorni dalla cessazione del rapporto di lavoro. La domanda si presenta online sul portale INPS oppure tramite un patronato (CAF, INCA, ACLI, ecc.) a Cosenza.",
+  "ente_competente": "INPS — Sede di Cosenza / Patronato",
+  "tags": ["lavoro", "disoccupazione", "naspi", "inps", "sussidio", "privato"],
+  "tempo_stimato_giorni": 30,
+  "costo_stimato_eur": 0.0,
+  "steps": [
+    {
+      "order": 1,
+      "title": "Verifica i requisiti per la NASpI",
+      "description": "Prima di presentare la domanda, verifica di avere i requisiti: (1) cessazione involontaria del rapporto di lavoro (licenziamento, scadenza contratto a termine, dimissioni per giusta causa); (2) almeno 13 settimane di contribuzione nei 4 anni precedenti la cessazione; (3) stato di disoccupazione (DID già presentata al CPI di Cosenza). Le dimissioni volontarie danno diritto alla NASpI solo in caso di giusta causa documentata.",
+      "ufficio": null,
+      "costo_stimato_eur": null,
+      "tempo_stimato_giorni": 1,
+      "documents": []
+    },
+    {
+      "order": 2,
+      "title": "Presenta la domanda online o tramite patronato",
+      "description": "La domanda NASpI va presentata entro 68 giorni dalla cessazione. Puoi presentarla: (A) online sul portale INPS (inps.it) con SPID, CIE o PIN INPS — accedi all'area 'Prestazioni e Servizi' > 'NASpI — Indennità mensile di disoccupazione'; (B) tramite un patronato (INCA, ACLI, INAS, CAF) presente a Cosenza — il servizio è gratuito. Il patronato può assisterti nella compilazione e nell'allegazione dei documenti.",
+      "ufficio": "Portale INPS online (inps.it) / Patronato a Cosenza / Sede INPS Cosenza, Via Falcone e Borsellino",
+      "costo_stimato_eur": 0.0,
+      "tempo_stimato_giorni": 1,
+      "documents": [
+        {
+          "name": "Identità digitale SPID o CIE (per accesso portale INPS)",
+          "required": true,
+          "notes": "Oppure rivolgersi a un patronato che presenta la domanda per conto tuo"
+        },
+        {
+          "name": "Documento di cessazione del rapporto di lavoro",
+          "required": true,
+          "notes": "Lettera di licenziamento, comunicazione di cessazione o scadenza contratto"
+        },
+        {
+          "name": "Codice IBAN del conto corrente o libretto postale",
+          "required": true,
+          "notes": "L'INPS eroga la NASpI esclusivamente tramite accredito bancario/postale"
+        },
+        {
+          "name": "Conferma DID (Dichiarazione di Immediata Disponibilità)",
+          "required": true,
+          "notes": "Attestato rilasciato dal CPI di Cosenza o ricevuta del portale MyANPAL"
+        }
+      ]
+    }
+  ]
+}

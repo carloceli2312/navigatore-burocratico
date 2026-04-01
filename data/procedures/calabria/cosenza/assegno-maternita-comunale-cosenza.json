@@ -1,0 +1,81 @@
+{
+  "slug": "assegno-maternita-comunale-cosenza",
+  "name": "Assegno di Maternità del Comune (Assegno Base)",
+  "category": "sociale",
+  "description": "L'assegno di maternità del Comune è un contributo economico una tantum riconosciuto alle madri residenti a Cosenza per la nascita o l'adozione di un figlio, destinato alle famiglie che non percepiscono già indennità di maternità da lavoro dipendente o autonomo equivalente. È finanziato dallo Stato e gestito dai Comuni: il Comune di Cosenza raccoglie le domande e le trasmette all'INPS che eroga il pagamento. L'importo è rivalutato annualmente dall'INPS (circa 2.000-2.200€ una tantum).",
+  "ente_competente": "Comune di Cosenza — Servizi Sociali / INPS Cosenza",
+  "tags": ["sociale", "maternita", "famiglia", "neonato", "privato"],
+  "tempo_stimato_giorni": 90,
+  "costo_stimato_eur": 0.0,
+  "steps": [
+    {
+      "order": 1,
+      "title": "Verifica i requisiti",
+      "description": "I requisiti per accedere all'assegno di maternità del Comune sono: (1) residenza nel Comune di Cosenza al momento della domanda; (2) nascita o adozione avvenuta nell'anno solare corrente; (3) ISEE familiare inferiore alla soglia stabilita annualmente dall'INPS (indicativamente ~22.000€); (4) la madre non deve percepire indennità di maternità INPS da lavoro dipendente/autonomo pari o superiore all'importo dell'assegno. Le mamme lavoratrici autonome con indennità INPS inferiore all'importo dell'assegno possono richiedere la differenza.",
+      "ufficio": null,
+      "costo_stimato_eur": null,
+      "tempo_stimato_giorni": 1,
+      "documents": []
+    },
+    {
+      "order": 2,
+      "title": "Presenta l'ISEE aggiornato presso un CAF",
+      "description": "Recati a un CAF di Cosenza per ottenere l'attestazione ISEE aggiornata al momento della domanda. L'ISEE deve riferirsi alla situazione economica del nucleo familiare al momento della richiesta.",
+      "ufficio": "CAF convenzionato a Cosenza",
+      "costo_stimato_eur": 0.0,
+      "tempo_stimato_giorni": 7,
+      "documents": [
+        {
+          "name": "Documentazione reddituale del nucleo familiare",
+          "required": true,
+          "notes": "Il CAF guida nella raccolta dei documenti necessari per la DSU"
+        }
+      ]
+    },
+    {
+      "order": 3,
+      "title": "Presenta la domanda al Comune entro 6 mesi dalla nascita",
+      "description": "Presenta la domanda al Servizio Servizi Sociali del Comune di Cosenza entro 6 mesi dalla data di nascita o dall'adozione/affidamento. La domanda può essere presentata allo sportello o inviata tramite PEC. Il Comune verifica i requisiti, autentica la domanda e la trasmette all'INPS entro i termini previsti. L'INPS eroga il pagamento direttamente sul conto corrente indicato dalla richiedente.",
+      "ufficio": "Comune di Cosenza — Servizi Sociali, Piazza dei Bruzi 4 (o sede decentrata)",
+      "costo_stimato_eur": 0.0,
+      "tempo_stimato_giorni": 1,
+      "documents": [
+        {
+          "name": "Domanda assegno maternità (modulo comunale)",
+          "required": true,
+          "notes": "Disponibile allo sportello Servizi Sociali o sul sito del Comune"
+        },
+        {
+          "name": "Documento di identità della madre",
+          "required": true,
+          "notes": null
+        },
+        {
+          "name": "Codice fiscale della madre e del neonato",
+          "required": true,
+          "notes": null
+        },
+        {
+          "name": "Attestazione ISEE in corso di validità",
+          "required": true,
+          "notes": null
+        },
+        {
+          "name": "Certificato di nascita del figlio",
+          "required": true,
+          "notes": "Estratto dall'ufficio Stato Civile del Comune, gratuito"
+        },
+        {
+          "name": "Codice IBAN del conto corrente intestato alla madre",
+          "required": true,
+          "notes": "Per l'accredito da parte dell'INPS"
+        },
+        {
+          "name": "Dichiarazione di non percezione di indennità INPS equivalente",
+          "required": false,
+          "notes": "Oppure documentazione dell'indennità parziale percepita per richiedere la differenza"
+        }
+      ]
+    }
+  ]
+}

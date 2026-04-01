@@ -1,0 +1,57 @@
+{
+  "slug": "dichiarazione-nascita-cosenza",
+  "name": "Dichiarazione di Nascita",
+  "category": "stato-civile",
+  "description": "La dichiarazione di nascita è l'atto con cui si registra ufficialmente la nascita di un bambino all'anagrafe del Comune. È obbligatoria per legge. Può essere resa dal padre, dalla madre o da chi assiste al parto. Se il bambino nasce in ospedale a Cosenza, la direzione sanitaria può trasmettere la dichiarazione direttamente al Comune tramite il sistema ANPR, semplificando la procedura.",
+  "ente_competente": "Comune di Cosenza — Ufficio di Stato Civile",
+  "tags": ["stato-civile", "nascita", "neonato", "privato", "famiglia"],
+  "tempo_stimato_giorni": 3,
+  "costo_stimato_eur": 0.0,
+  "steps": [
+    {
+      "order": 1,
+      "title": "Dichiarazione in ospedale (percorso preferenziale)",
+      "description": "Se il parto avviene presso l'Ospedale dell'Annunziata di Cosenza o altra struttura ospedaliera, la direzione sanitaria può trasmettere la dichiarazione di nascita direttamente al Comune tramite il sistema ANPR. In questo caso i genitori firmano i moduli in ospedale prima della dimissione e non è necessario recarsi al Comune. Questo percorso è gratuito e il più veloce.",
+      "ufficio": "Ospedale dell'Annunziata — Cosenza (o struttura di nascita)",
+      "costo_stimato_eur": 0.0,
+      "tempo_stimato_giorni": 1,
+      "documents": [
+        {
+          "name": "Documento di identità di entrambi i genitori",
+          "required": true,
+          "notes": null
+        },
+        {
+          "name": "Attestazione di nascita rilasciata dalla struttura ospedaliera",
+          "required": true,
+          "notes": "Fornita automaticamente dall'ospedale"
+        }
+      ]
+    },
+    {
+      "order": 2,
+      "title": "(Alternativa) Dichiarazione allo sportello Stato Civile del Comune",
+      "description": "Se il parto è avvenuto fuori dall'ospedale o si preferisce il percorso tradizionale, la dichiarazione va presentata all'Ufficio di Stato Civile del Comune di Cosenza entro 10 giorni dalla nascita (se resa in Comune) o entro 3 giorni se resa all'ospedale. La dichiarazione può essere fatta dal padre, dalla madre, o da un loro delegato con procura.",
+      "ufficio": "Comune di Cosenza — Ufficio di Stato Civile, Piazza dei Bruzi 4",
+      "costo_stimato_eur": 0.0,
+      "tempo_stimato_giorni": 1,
+      "documents": [
+        {
+          "name": "Documento di identità di chi rende la dichiarazione",
+          "required": true,
+          "notes": null
+        },
+        {
+          "name": "Attestazione di nascita del medico o ostetrica che ha assistito al parto",
+          "required": true,
+          "notes": "Oppure attestazione dell'ospedale"
+        },
+        {
+          "name": "Atto di matrimonio (se i genitori sono sposati)",
+          "required": false,
+          "notes": "Per automatica attribuzione della paternità"
+        }
+      ]
+    }
+  ]
+}

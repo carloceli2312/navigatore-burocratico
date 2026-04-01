@@ -1,0 +1,70 @@
+{
+  "slug": "scia-commercio-dettaglio-cosenza",
+  "name": "SCIA per Apertura Esercizio Commerciale (Commercio al Dettaglio)",
+  "category": "attivita-produttive",
+  "description": "La SCIA (Segnalazione Certificata di Inizio Attività) per il commercio al dettaglio in sede fissa consente di aprire un negozio o punto vendita nel Comune di Cosenza. Ha efficacia immediata: l'attività può iniziare dalla data di presentazione. Il Comune ha 60 giorni per effettuare le verifiche. La presentazione avviene tramite lo Sportello Unico Attività Produttive (SUAP) del Comune, accessibile anche tramite il portale CalabriaSUAP o ImpresaInUnGiorno.",
+  "ente_competente": "Comune di Cosenza — SUAP (Sportello Unico Attività Produttive)",
+  "tags": ["attivita-produttive", "commercio", "scia", "impresa", "negozio"],
+  "tempo_stimato_giorni": 1,
+  "costo_stimato_eur": 100.0,
+  "steps": [
+    {
+      "order": 1,
+      "title": "Verifica i requisiti soggettivi e i locali",
+      "description": "Prima di presentare la SCIA, verifica di possedere i requisiti morali e professionali richiesti (art. 71 D.Lgs. 59/2010): assenza di condanne penali per delitti gravi, assenza di misure di prevenzione, non essere fallito. Verifica anche che i locali siano idonei: destinazione urbanistica compatibile con attività commerciale, certificato di agibilità, conformità impianti. Per medie strutture di vendita (>150 mq a Cosenza) è richiesta l'Autorizzazione Commerciale invece della SCIA.",
+      "ufficio": null,
+      "costo_stimato_eur": null,
+      "tempo_stimato_giorni": 5,
+      "documents": []
+    },
+    {
+      "order": 2,
+      "title": "Iscrizione al Registro Imprese (se non già effettuata)",
+      "description": "Se l'attività è svolta in forma di impresa individuale o società, verifica di essere già iscritto al Registro Imprese della Camera di Commercio di Cosenza. L'iscrizione va effettuata contestualmente o prima della SCIA. Per le società, verifica che l'oggetto sociale comprenda l'attività commerciale che intendi svolgere.",
+      "ufficio": "Camera di Commercio di Cosenza, Via Calabria",
+      "costo_stimato_eur": null,
+      "tempo_stimato_giorni": 5,
+      "documents": []
+    },
+    {
+      "order": 3,
+      "title": "Presenta la SCIA tramite SUAP",
+      "description": "Presenta la SCIA allo SUAP del Comune di Cosenza tramite il portale CalabriaSUAP (calabriasuap.it) o ImpresaInUnGiorno (impresainungiorno.gov.it). La presentazione è interamente telematica con firma digitale. L'attività può essere avviata contestualmente alla presentazione. Entro 60 giorni il Comune può effettuare verifiche e, in caso di irregolarità, emettere un provvedimento inibitorio.",
+      "ufficio": "Comune di Cosenza — SUAP / portale CalabriaSUAP o ImpresaInUnGiorno",
+      "costo_stimato_eur": 100.0,
+      "tempo_stimato_giorni": 1,
+      "documents": [
+        {
+          "name": "Modulo SCIA commercio al dettaglio (modulistica regionale unificata)",
+          "required": true,
+          "notes": "Compilato e firmato digitalmente"
+        },
+        {
+          "name": "Documento di identità del titolare/legale rappresentante",
+          "required": true,
+          "notes": null
+        },
+        {
+          "name": "Visura camerale aggiornata",
+          "required": true,
+          "notes": "Con codice ATECO dell'attività commerciale"
+        },
+        {
+          "name": "Planimetria dei locali in scala 1:100",
+          "required": true,
+          "notes": "Con indicazione della superficie di vendita"
+        },
+        {
+          "name": "Certificato di agibilità dei locali",
+          "required": true,
+          "notes": "O autocertificazione se i locali hanno più di 20 anni e non hanno subito variazioni"
+        },
+        {
+          "name": "Dichiarazione antimafia (se richiesta)",
+          "required": false,
+          "notes": "Per attività in settori soggetti a normativa antimafia"
+        }
+      ]
+    }
+  ]
+}
