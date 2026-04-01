@@ -37,7 +37,7 @@ class NavBurApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
-          seedColor: const Color(0xFF1565C0), // blu istituzionale
+          seedColor: const Color(0xFF1A47B8), // cobalt Direction B
           brightness: Brightness.light,
         ),
         useMaterial3: true,
