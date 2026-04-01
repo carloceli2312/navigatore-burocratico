@@ -38,10 +38,11 @@ def _to_detail(p: Procedure) -> ProcedureDetailOut:
     )
 
 
-async def list_procedures(db: AsyncSession) -> list[ProcedureOut]:
-    result = await db.execute(
-        select(Procedure).where(Procedure.active == True).order_by(Procedure.id)  # noqa: E712
-    )
+async def list_procedures(db: AsyncSession, category: str | None = None) -> list[ProcedureOut]:
+    query = select(Procedure).where(Procedure.active == True)  # noqa: E712
+    if category:
+        query = query.where(Procedure.category == category)
+    result = await db.execute(query.order_by(Procedure.id))
     return [
         ProcedureOut(
             slug=p.slug,

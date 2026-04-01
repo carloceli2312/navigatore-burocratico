@@ -9,8 +9,11 @@ router = APIRouter(prefix="/v1/procedures", tags=["procedures"])
 
 
 @router.get("", response_model=list[ProcedureOut])
-async def get_procedures(db: AsyncSession = Depends(get_db)) -> list[ProcedureOut]:
-    return await list_procedures(db)
+async def get_procedures(
+    category: str | None = None,
+    db: AsyncSession = Depends(get_db),
+) -> list[ProcedureOut]:
+    return await list_procedures(db, category=category)
 
 
 @router.get("/{slug}", response_model=ProcedureDetailOut)
