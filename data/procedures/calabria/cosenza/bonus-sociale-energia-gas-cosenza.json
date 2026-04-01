@@ -1,0 +1,61 @@
+{
+  "slug": "bonus-sociale-energia-gas-cosenza",
+  "name": "Bonus Sociale Elettricità e Gas",
+  "category": "sociale",
+  "description": "Il Bonus Sociale Elettricità e Gas è un'agevolazione economica sulle bollette di luce e gas riconosciuta alle famiglie in condizioni di disagio economico o fisico. Il bonus viene erogato direttamente in detrazione sulla bolletta: non va richiesto ogni anno perché, se si è già presentato l'ISEE al CAF, viene rinnovato automaticamente in base all'ISEE precompilato. A Cosenza il distributore elettrico di riferimento è Enel Distribuzione; per il gas, Italgas.",
+  "ente_competente": "CAF (Centro di Assistenza Fiscale) / Comune di Cosenza — Servizi Sociali",
+  "tags": ["sociale", "bonus", "energia", "gas", "agevolazione", "privato"],
+  "tempo_stimato_giorni": 30,
+  "costo_stimato_eur": 0.0,
+  "steps": [
+    {
+      "order": 1,
+      "title": "Verifica i requisiti ISEE",
+      "description": "Il bonus elettricità e gas spetta se il tuo ISEE familiare è: (A) ≤ 9.530€ per nuclei fino a 3 componenti; (B) ≤ 20.000€ per nuclei con 4 o più figli a carico (famiglie numerose). Il bonus disagio fisico spetta invece ai titolari di forniture con apparecchiature elettromedicali salvavita, indipendentemente dall'ISEE. Verifica la soglia aggiornata sul sito ARERA (arera.it), poiché può essere aggiornata annualmente.",
+      "ufficio": null,
+      "costo_stimato_eur": null,
+      "tempo_stimato_giorni": 1,
+      "documents": []
+    },
+    {
+      "order": 2,
+      "title": "Presenta la DSU e ottieni l'ISEE presso un CAF",
+      "description": "Recati a un Centro di Assistenza Fiscale (CAF) presente a Cosenza (ACLI, INAS-CISL, INCA-CGIL, ecc.) per presentare la Dichiarazione Sostitutiva Unica (DSU) e ottenere l'attestazione ISEE. Il servizio è gratuito. Una volta ottenuto l'ISEE, il CAF trasmette la richiesta di bonus all'INPS tramite il Sistema Informativo dei Servizi Sociali (SISS). Non è necessario presentare la domanda direttamente al distributore o al Comune.",
+      "ufficio": "CAF convenzionato a Cosenza (ACLI, CGIL, CISL, UIL, CNA, Confcommercio, ecc.)",
+      "costo_stimato_eur": 0.0,
+      "tempo_stimato_giorni": 7,
+      "documents": [
+        {
+          "name": "Documento di identità",
+          "required": true,
+          "notes": null
+        },
+        {
+          "name": "Codice fiscale di tutti i componenti del nucleo familiare",
+          "required": true,
+          "notes": null
+        },
+        {
+          "name": "Documentazione reddituale e patrimoniale del nucleo (CU, 730, dichiarazioni bancarie)",
+          "required": true,
+          "notes": "Il CAF ti guida nella raccolta; in molti casi si usa l'ISEE precompilato"
+        },
+        {
+          "name": "Codice POD della fornitura elettrica (sulla bolletta della luce)",
+          "required": true,
+          "notes": "Formato IT001E..."
+        },
+        {
+          "name": "Codice PDR della fornitura gas (sulla bolletta del gas)",
+          "required": false,
+          "notes": "Solo se si richiede anche il bonus gas"
+        },
+        {
+          "name": "Documentazione medica per disagio fisico",
+          "required": false,
+          "notes": "Solo per il bonus disagio fisico (apparecchiature elettromedicali)"
+        }
+      ]
+    }
+  ]
+}

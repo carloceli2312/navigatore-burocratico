@@ -1,0 +1,96 @@
+{
+  "slug": "scia-somministrazione-alimenti-cosenza",
+  "name": "SCIA per Apertura Bar, Ristorante o Pizzeria (Somministrazione Alimenti e Bevande)",
+  "category": "attivita-produttive",
+  "description": "La SCIA per la somministrazione di alimenti e bevande consente di aprire bar, ristoranti, pizzerie, pasticcerie, birrerie e locali analoghi nel Comune di Cosenza. Rispetto alla SCIA per commercio ordinario, richiede requisiti aggiuntivi (abilitazione professionale o corso SAB) e adempimenti sanitari (notifica sanitaria ASP). Ha efficacia immediata. Se la struttura ha capienza superiore a 100 persone, è necessario anche il Certificato di Prevenzione Incendi (CPI) dei Vigili del Fuoco.",
+  "ente_competente": "Comune di Cosenza — SUAP / ASP Cosenza",
+  "tags": ["attivita-produttive", "ristorazione", "bar", "ristorante", "scia", "impresa"],
+  "tempo_stimato_giorni": 30,
+  "costo_stimato_eur": 300.0,
+  "steps": [
+    {
+      "order": 1,
+      "title": "Verifica i requisiti professionali",
+      "description": "Per somministrare alimenti e bevande è necessario possedere uno dei seguenti requisiti: (A) diploma di scuola alberghiera o professionale di settore; (B) attestato di frequenza al corso SAB (Somministrazione Alimenti e Bevande) riconosciuto dalla Regione Calabria; (C) esperienza lavorativa di almeno 2 anni nel settore negli ultimi 5 anni. Almeno uno degli addetti alla somministrazione deve possedere questi requisiti.",
+      "ufficio": null,
+      "costo_stimato_eur": null,
+      "tempo_stimato_giorni": 1,
+      "documents": []
+    },
+    {
+      "order": 2,
+      "title": "Adempimenti sanitari — Notifica all'ASP Cosenza",
+      "description": "Prima o contestualmente alla SCIA, presenta la notifica sanitaria obbligatoria all'ASP Cosenza (Dipartimento di Prevenzione, SIAN). La notifica riguarda l'attività di preparazione e somministrazione alimenti. L'ASP effettuerà un sopralluogo di verifica entro 30-60 giorni. Assicurati che i locali rispettino i requisiti igienico-sanitari del Reg. CE 852/2004: superfici lavabili, separazione aree sporche/pulite, ventilazione adeguata.",
+      "ufficio": "ASP Cosenza — SIAN (Servizio Igiene Alimenti e Nutrizione)",
+      "costo_stimato_eur": 50.0,
+      "tempo_stimato_giorni": 5,
+      "documents": [
+        {
+          "name": "Notifica sanitaria (modulo ASP Cosenza)",
+          "required": true,
+          "notes": "Con planimetria dei locali e descrizione del processo produttivo/di somministrazione"
+        },
+        {
+          "name": "Piano HACCP (Hazard Analysis Critical Control Points)",
+          "required": true,
+          "notes": "Documento di autocontrollo igienico-sanitario obbligatorio per legge"
+        }
+      ]
+    },
+    {
+      "order": 3,
+      "title": "Verifica prevenzione incendi (se capienza >100 persone)",
+      "description": "Se il locale ha una capienza superiore a 100 persone, è obbligatorio ottenere il Certificato di Prevenzione Incendi (CPI) dal Comando dei Vigili del Fuoco di Cosenza prima dell'apertura. Per locali con capienza inferiore, è sufficiente una dichiarazione di conformità antincendio allegata alla SCIA.",
+      "ufficio": "Comando Vigili del Fuoco di Cosenza, Via degli Stadi",
+      "costo_stimato_eur": null,
+      "tempo_stimato_giorni": 30,
+      "documents": [
+        {
+          "name": "Progetto antincendio approvato dal VVFF (per capienza >100 persone)",
+          "required": false,
+          "notes": "Solo se capienza superiore a 100 persone"
+        },
+        {
+          "name": "Dichiarazione di conformità impianti antincendio",
+          "required": true,
+          "notes": "Rilasciata da tecnico abilitato"
+        }
+      ]
+    },
+    {
+      "order": 4,
+      "title": "Presenta la SCIA tramite SUAP",
+      "description": "Presenta la SCIA per somministrazione alimenti allo SUAP del Comune di Cosenza tramite il portale CalabriaSUAP o ImpresaInUnGiorno. L'attività può iniziare dalla data di presentazione. Allega tutta la documentazione tecnica e professionale. Il Comune ha 60 giorni per verifiche; l'ASP agirà autonomamente con i propri sopralluoghi.",
+      "ufficio": "Comune di Cosenza — SUAP / portale CalabriaSUAP",
+      "costo_stimato_eur": 200.0,
+      "tempo_stimato_giorni": 1,
+      "documents": [
+        {
+          "name": "Modulo SCIA somministrazione alimenti e bevande",
+          "required": true,
+          "notes": "Compilato e firmato digitalmente"
+        },
+        {
+          "name": "Attestato SAB o titolo professionale equivalente",
+          "required": true,
+          "notes": "Del titolare o di un addetto alla somministrazione"
+        },
+        {
+          "name": "Planimetria dei locali",
+          "required": true,
+          "notes": "Con indicazione delle diverse aree (cucina, sala, servizi)"
+        },
+        {
+          "name": "Certificato di agibilità dei locali",
+          "required": true,
+          "notes": null
+        },
+        {
+          "name": "Ricevuta notifica sanitaria ASP",
+          "required": true,
+          "notes": null
+        }
+      ]
+    }
+  ]
+}

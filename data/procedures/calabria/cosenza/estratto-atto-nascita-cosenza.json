@@ -1,0 +1,47 @@
+{
+  "slug": "estratto-atto-nascita-cosenza",
+  "name": "Estratto dell'Atto di Nascita",
+  "category": "anagrafe",
+  "description": "L'estratto dell'atto di nascita è il documento che certifica la data, il luogo di nascita e le generalità dei genitori. È richiesto per pratiche come il matrimonio civile, il riconoscimento di cittadinanza, il passaporto per i minori e alcune pratiche previdenziali. È disponibile online tramite ANPR per i nati nei comuni aderenti, oppure può essere richiesto allo sportello dello Stato Civile del Comune di nascita.",
+  "ente_competente": "Comune di Cosenza — Ufficio di Stato Civile / ANPR",
+  "tags": ["anagrafe", "stato-civile", "nascita", "certificato", "privato"],
+  "tempo_stimato_giorni": 1,
+  "costo_stimato_eur": 0.0,
+  "steps": [
+    {
+      "order": 1,
+      "title": "Verifica se disponibile tramite ANPR (nati a Cosenza)",
+      "description": "Se sei nato a Cosenza e il tuo atto è stato digitalizzato, puoi scaricare l'estratto di nascita gratuitamente dal portale ANPR (anagrafenazionale.interno.it) con SPID, CIE o CNS. L'estratto scaricato ha piena validità legale. Se sei nato in un altro Comune, devi rivolgerti all'Ufficio di Stato Civile del Comune di nascita.",
+      "ufficio": "Portale ANPR online — anagrafenazionale.interno.it",
+      "costo_stimato_eur": 0.0,
+      "tempo_stimato_giorni": 1,
+      "documents": [
+        {
+          "name": "Identità digitale (SPID, CIE o CNS)",
+          "required": true,
+          "notes": null
+        }
+      ]
+    },
+    {
+      "order": 2,
+      "title": "(Alternativa) Richiesta allo sportello Stato Civile",
+      "description": "Se non puoi usare ANPR, recati all'Ufficio di Stato Civile del Comune di Cosenza (se sei nato a Cosenza) con un documento di identità. Il rilascio è immediato. Puoi richiedere sia l'estratto semplice che la copia integrale dell'atto (quest'ultima richiede marca da bollo per uso verso privati e contiene tutti i dati incluse le annotazioni marginali).",
+      "ufficio": "Comune di Cosenza — Ufficio di Stato Civile, Piazza dei Bruzi 4",
+      "costo_stimato_eur": 16.0,
+      "tempo_stimato_giorni": 1,
+      "documents": [
+        {
+          "name": "Documento di identità valido",
+          "required": true,
+          "notes": null
+        },
+        {
+          "name": "Marca da bollo da € 16,00",
+          "required": false,
+          "notes": "Solo per uso verso enti privati o uso commerciale"
+        }
+      ]
+    }
+  ]
+}

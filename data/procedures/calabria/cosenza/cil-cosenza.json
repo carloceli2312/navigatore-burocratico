@@ -1,0 +1,37 @@
+{
+  "slug": "cil-cosenza",
+  "name": "CIL — Comunicazione di Inizio Lavori (Manutenzione Ordinaria)",
+  "category": "edilizia",
+  "description": "La CIL (Comunicazione di Inizio Lavori) è la comunicazione preventiva richiesta per gli interventi di manutenzione ordinaria che modificano la distribuzione o i caratteri degli ambienti interni ma rientrano nella definizione normativa di manutenzione ordinaria. Non richiede l'asseverazione di un tecnico. Esempi: tinteggiatura delle pareti esterne, rifacimento del manto di copertura con stessi materiali, sostituzione infissi con stesse tipologie, manutenzione impianti esistenti. Per interventi di manutenzione ordinaria interna non è nemmeno necessaria la CIL.",
+  "ente_competente": "Comune di Cosenza — Sportello Unico per l'Edilizia (SUE)",
+  "tags": ["edilizia", "cil", "manutenzione-ordinaria", "privato"],
+  "tempo_stimato_giorni": 1,
+  "costo_stimato_eur": 50.0,
+  "steps": [
+    {
+      "order": 1,
+      "title": "Presenta la CIL al SUE prima dell'inizio dei lavori",
+      "description": "Presenta la comunicazione di inizio lavori allo Sportello SUE del Comune di Cosenza prima di iniziare gli interventi. A differenza della CILA, non è necessaria l'asseverazione di un tecnico per la manutenzione ordinaria. I lavori possono iniziare dalla data di presentazione. Conserva la ricevuta di presentazione: deve essere tenuta in cantiere durante i lavori.",
+      "ufficio": "Comune di Cosenza — SUE, Piazza dei Bruzi 4 / portale CalabriaSUE",
+      "costo_stimato_eur": 50.0,
+      "tempo_stimato_giorni": 1,
+      "documents": [
+        {
+          "name": "Modulo CIL compilato e firmato dal proprietario",
+          "required": true,
+          "notes": "Con descrizione sintetica degli interventi previsti"
+        },
+        {
+          "name": "Documento di identità del richiedente",
+          "required": true,
+          "notes": null
+        },
+        {
+          "name": "Ricevuta versamento diritti di segreteria",
+          "required": true,
+          "notes": "Importo ridotto rispetto alla CILA, verificare tariffario SUE Cosenza"
+        }
+      ]
+    }
+  ]
+}

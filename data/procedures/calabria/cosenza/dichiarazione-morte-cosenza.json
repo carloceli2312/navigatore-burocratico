@@ -1,0 +1,46 @@
+{
+  "slug": "dichiarazione-morte-cosenza",
+  "name": "Dichiarazione di Morte",
+  "category": "stato-civile",
+  "description": "La dichiarazione di morte è l'atto con cui si registra ufficialmente il decesso di una persona. Va resa entro 24 ore dal decesso. Può farla un familiare, un convivente, chi era presente al momento del decesso, o l'impresa funebre incaricata dalla famiglia. Se il decesso avviene in ospedale, è la struttura stessa a trasmettere la comunicazione al Comune.",
+  "ente_competente": "Comune di Cosenza — Ufficio di Stato Civile",
+  "tags": ["stato-civile", "morte", "decesso", "famiglia"],
+  "tempo_stimato_giorni": 1,
+  "costo_stimato_eur": 0.0,
+  "steps": [
+    {
+      "order": 1,
+      "title": "Ottieni il certificato di accertamento di morte",
+      "description": "Prima di procedere con la dichiarazione, è necessario che il medico curante o il medico necroscopo dell'ASP Cosenza rilasci il certificato di accertamento di morte (scheda ISTAT di morte). Se il decesso avviene in ospedale, questo adempimento viene gestito dalla struttura sanitaria. Se avviene a domicilio, contatta il medico di base o il 118.",
+      "ufficio": "Medico di medicina generale / ASP Cosenza / struttura ospedaliera",
+      "costo_stimato_eur": 0.0,
+      "tempo_stimato_giorni": 1,
+      "documents": []
+    },
+    {
+      "order": 2,
+      "title": "Presenta la dichiarazione di morte allo Stato Civile",
+      "description": "Recati (o incarica l'impresa funebre) presso l'Ufficio di Stato Civile del Comune di Cosenza entro 24 ore dal decesso. L'ufficio provvede alla registrazione dell'atto di morte e, su richiesta, rilascia il permesso di seppellimento o cremazione necessario per il funerale. La dichiarazione è gratuita.",
+      "ufficio": "Comune di Cosenza — Ufficio di Stato Civile, Piazza dei Bruzi 4",
+      "costo_stimato_eur": 0.0,
+      "tempo_stimato_giorni": 1,
+      "documents": [
+        {
+          "name": "Certificato di accertamento di morte (scheda ISTAT)",
+          "required": true,
+          "notes": "Rilasciato dal medico necroscopo dell'ASP Cosenza"
+        },
+        {
+          "name": "Documento di identità del dichiarante",
+          "required": true,
+          "notes": "Familiare, convivente o delegato dell'impresa funebre"
+        },
+        {
+          "name": "Documento di identità del defunto (se disponibile)",
+          "required": false,
+          "notes": null
+        }
+      ]
+    }
+  ]
+}

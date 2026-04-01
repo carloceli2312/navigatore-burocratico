@@ -1,0 +1,67 @@
+{
+  "slug": "iscrizione-centro-impiego-cosenza",
+  "name": "Iscrizione al Centro per l'Impiego di Cosenza (Stato di Disoccupazione)",
+  "category": "lavoro",
+  "description": "L'iscrizione al Centro per l'Impiego (CPI) di Cosenza consente di acquisire ufficialmente lo stato di disoccupazione, prerequisito per accedere a numerose misure di sostegno al reddito (NASpI, Assegno di Inclusione, borse lavoro) e per partecipare a concorsi e avvisi pubblici riservati ai disoccupati. La Dichiarazione di Immediata Disponibilità (DID) al lavoro va resa entro 15 giorni dalla perdita del lavoro per mantenere i diritti ai sussidi. Dal 2022 la DID può essere resa anche online tramite il portale ANPAL.",
+  "ente_competente": "Centro per l'Impiego di Cosenza — Regione Calabria",
+  "tags": ["lavoro", "disoccupazione", "cpi", "privato"],
+  "tempo_stimato_giorni": 3,
+  "costo_stimato_eur": 0.0,
+  "steps": [
+    {
+      "order": 1,
+      "title": "Rendi la Dichiarazione di Immediata Disponibilità (DID)",
+      "description": "La DID è la dichiarazione con cui il lavoratore si dichiara immediatamente disponibile a svolgere attività lavorativa e a partecipare alle misure di politica attiva. Può essere resa: (A) online tramite il portale MyANPAL (myportal.anpal.gov.it) con SPID — opzione più rapida; (B) allo sportello del CPI di Cosenza senza appuntamento. La DID va resa entro 15 giorni dalla cessazione del rapporto di lavoro per conservare il diritto alla NASpI.",
+      "ufficio": "Centro per l'Impiego di Cosenza, Via degli Stadi snc / portale MyANPAL online",
+      "costo_stimato_eur": 0.0,
+      "tempo_stimato_giorni": 1,
+      "documents": [
+        {
+          "name": "Documento di identità valido",
+          "required": true,
+          "notes": null
+        },
+        {
+          "name": "Codice fiscale",
+          "required": true,
+          "notes": null
+        },
+        {
+          "name": "Lettera di licenziamento o comunicazione di cessazione del rapporto di lavoro",
+          "required": false,
+          "notes": "Utile per documentare la data di cessazione"
+        },
+        {
+          "name": "Ultimo contratto di lavoro o busta paga",
+          "required": false,
+          "notes": "Per la verifica dei contributi ai fini della NASpI"
+        }
+      ]
+    },
+    {
+      "order": 2,
+      "title": "Firma il Patto di Servizio Personalizzato",
+      "description": "Entro 30 giorni dalla DID, il CPI convoca il lavoratore per definire il Patto di Servizio Personalizzato (PSP). Il PSP è un accordo che stabilisce le azioni che il lavoratore si impegna a svolgere nella ricerca del lavoro (candidature, corsi di formazione, colloqui) e i servizi che il CPI si impegna a offrire. La firma del PSP è obbligatoria per mantenere la NASpI e gli altri sussidi di disoccupazione.",
+      "ufficio": "Centro per l'Impiego di Cosenza, Via degli Stadi snc",
+      "costo_stimato_eur": 0.0,
+      "tempo_stimato_giorni": 1,
+      "documents": [
+        {
+          "name": "Documento di identità",
+          "required": true,
+          "notes": null
+        },
+        {
+          "name": "Codice fiscale",
+          "required": true,
+          "notes": null
+        },
+        {
+          "name": "Curriculum vitae aggiornato",
+          "required": false,
+          "notes": "Utile per la definizione del percorso di ricollocazione"
+        }
+      ]
+    }
+  ]
+}

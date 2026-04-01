@@ -1,0 +1,67 @@
+{
+  "slug": "contrassegno-disabili-cosenza",
+  "name": "Contrassegno di Parcheggio per Persone con Disabilità",
+  "category": "mobilita",
+  "description": "Il contrassegno di parcheggio per persone con disabilità (pass disabili, o 'contrassegno arancione' nella versione europea) consente di parcheggiare negli stalli riservati ai disabili e in alcune zone a traffico limitato. Viene rilasciato gratuitamente dalla Polizia Municipale di Cosenza su certificazione medica dell'ASP Cosenza. Ha validità 5 anni (per disabilità permanente) o temporanea (per condizioni transitorie).",
+  "ente_competente": "Comune di Cosenza — Polizia Municipale",
+  "tags": ["mobilita", "disabilita", "parcheggio", "privato"],
+  "tempo_stimato_giorni": 30,
+  "costo_stimato_eur": 0.0,
+  "steps": [
+    {
+      "order": 1,
+      "title": "Ottieni la certificazione medica dell'ASP Cosenza",
+      "description": "Prima di tutto, fatti visitare dal medico legale dell'ASP Cosenza (Azienda Sanitaria Provinciale) per ottenere la certificazione che attesta la riduzione permanente o temporanea della capacità deambulatoria. La visita può essere richiesta tramite il medico di base che ti indirizzerà alla Commissione Medica ASP di Cosenza. In caso di certificazione INPS di invalidità già riconosciuta (≥66%), questa può valere come documentazione sostitutiva.",
+      "ufficio": "ASP Cosenza — Ufficio di Medicina Legale, Via Alimena — Cosenza",
+      "costo_stimato_eur": 0.0,
+      "tempo_stimato_giorni": 20,
+      "documents": [
+        {
+          "name": "Impegnativa del medico di base per visita medico-legale",
+          "required": true,
+          "notes": null
+        },
+        {
+          "name": "Documentazione sanitaria (cartelle cliniche, referti)",
+          "required": false,
+          "notes": "Utile per accelerare la valutazione"
+        },
+        {
+          "name": "Verbale INPS di invalidità (se già riconosciuta)",
+          "required": false,
+          "notes": "Può sostituire la visita ASP se l'invalidità riconosciuta è ≥66% con difficoltà deambulatoria"
+        }
+      ]
+    },
+    {
+      "order": 2,
+      "title": "Presenta la domanda alla Polizia Municipale",
+      "description": "Con la certificazione medica ASP in mano, presenta la domanda di rilascio del contrassegno alla Polizia Municipale di Cosenza. Il contrassegno è gratuito. Specifica se hai bisogno del contrassegno europeo standard (arancione) o del contrassegno temporaneo. Il rilascio avviene tipicamente entro 7-10 giorni lavorativi dalla domanda.",
+      "ufficio": "Comando Polizia Municipale di Cosenza, Via Cattaro 2",
+      "costo_stimato_eur": 0.0,
+      "tempo_stimato_giorni": 10,
+      "documents": [
+        {
+          "name": "Domanda di rilascio contrassegno (modulo comunale)",
+          "required": true,
+          "notes": "Scaricabile dal sito del Comune o disponibile allo sportello PM"
+        },
+        {
+          "name": "Certificazione medica ASP attestante la riduzione della capacità deambulatoria",
+          "required": true,
+          "notes": null
+        },
+        {
+          "name": "Documento di identità valido",
+          "required": true,
+          "notes": null
+        },
+        {
+          "name": "2 fotografie formato tessera recenti",
+          "required": true,
+          "notes": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "slug": "agibilita-sca-cosenza",
+  "name": "Segnalazione Certificata di Agibilità (SCA)",
+  "category": "edilizia",
+  "description": "La Segnalazione Certificata di Agibilità (SCA) attesta la sussistenza delle condizioni di sicurezza, igiene, salubrità e risparmio energetico degli edifici e degli impianti. Va presentata obbligatoriamente al termine dei lavori di nuova costruzione, ristrutturazione o ampliamento. Il silenzio-assenso si forma dopo 30 giorni dalla presentazione. A Cosenza, se l'edificio ha subito interventi strutturali, è necessario allegare anche il certificato di collaudo statico e la documentazione antisismica.",
+  "ente_competente": "Comune di Cosenza — Sportello Unico per l'Edilizia (SUE)",
+  "tags": ["edilizia", "agibilita", "nuova-costruzione", "ristrutturazione", "privato", "impresa"],
+  "tempo_stimato_giorni": 30,
+  "costo_stimato_eur": 250.0,
+  "steps": [
+    {
+      "order": 1,
+      "title": "Raccogli le certificazioni tecniche al termine dei lavori",
+      "description": "Al termine dei lavori, il Direttore dei Lavori (DL) deve raccogliere tutta la documentazione tecnica necessaria: certificati di conformità degli impianti (DM 37/2008), collaudo statico (se opere strutturali), Attestato di Prestazione Energetica (APE), aggiornamento catastale DOCFA (obbligatorio per nuove costruzioni). Questi documenti sono a carico dei rispettivi professionisti incaricati.",
+      "ufficio": null,
+      "costo_stimato_eur": 200.0,
+      "tempo_stimato_giorni": 15,
+      "documents": []
+    },
+    {
+      "order": 2,
+      "title": "Presenta la SCA al SUE entro 15 giorni dal termine lavori",
+      "description": "Entro 15 giorni dal termine dei lavori, il proprietario (tramite il DL) presenta la SCA allo Sportello SUE del Comune di Cosenza, preferibilmente in via telematica tramite il portale CalabriaSUE. Il Comune ha 30 giorni per verificare la documentazione: trascorso questo termine senza rilievi, l'agibilità si intende attestata (silenzio-assenso). In caso di documentazione incompleta, il termine viene sospeso fino all'integrazione.",
+      "ufficio": "Comune di Cosenza — SUE, Piazza dei Bruzi 4 / portale CalabriaSUE",
+      "costo_stimato_eur": 50.0,
+      "tempo_stimato_giorni": 1,
+      "documents": [
+        {
+          "name": "Modulo SCA (segnalazione certificata di agibilità)",
+          "required": true,
+          "notes": "Firmato dal proprietario e dal Direttore dei Lavori"
+        },
+        {
+          "name": "Comunicazione di Fine Lavori firmata dal DL",
+          "required": true,
+          "notes": null
+        },
+        {
+          "name": "Attestato di Prestazione Energetica (APE)",
+          "required": true,
+          "notes": "Redatto da tecnico certificatore energetico accreditato"
+        },
+        {
+          "name": "Certificati di conformità degli impianti (DM 37/2008)",
+          "required": true,
+          "notes": "Impianti elettrico, idrico-sanitario, termico, gas"
+        },
+        {
+          "name": "Certificato di collaudo statico",
+          "required": false,
+          "notes": "Obbligatorio se sono stati eseguiti interventi strutturali"
+        },
+        {
+          "name": "Documentazione antisismica (CalabriaSUE)",
+          "required": false,
+          "notes": "Obbligatoria per interventi strutturali — Cosenza è in zona sismica 2"
+        },
+        {
+          "name": "Aggiornamento catastale DOCFA",
+          "required": false,
+          "notes": "Obbligatorio per nuove costruzioni e variazioni catastali significative"
+        },
+        {
+          "name": "Ricevuta versamento diritti di istruttoria",
+          "required": true,
+          "notes": "Verificare importo sul tariffario SUE Cosenza vigente"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "slug": "carta-identita-elettronica-cosenza",
+  "name": "Carta d'Identità Elettronica (CIE)",
+  "category": "anagrafe",
+  "description": "La Carta d'Identità Elettronica (CIE) è il documento di identificazione rilasciato dal Comune di Cosenza ai propri residenti. Sostituisce la vecchia carta d'identità cartacea ed è dotata di chip NFC. Ha validità 3 anni (minori 0-3 anni), 5 anni (minori 3-18 anni) o 10 anni (maggiorenni). La richiesta va fatta esclusivamente allo sportello — non è possibile ottenerla autonomamente online.",
+  "ente_competente": "Comune di Cosenza — Ufficio Anagrafe",
+  "tags": ["anagrafe", "documento-identita", "cie", "privato"],
+  "tempo_stimato_giorni": 7,
+  "costo_stimato_eur": 22.21,
+  "steps": [
+    {
+      "order": 1,
+      "title": "Prenota un appuntamento allo sportello",
+      "description": "La CIE si richiede esclusivamente su appuntamento. Puoi prenotare online tramite il portale nazionale del Ministero dell'Interno (prenotazionecie.interno.gov.it) oppure telefonando direttamente all'Ufficio Anagrafe del Comune di Cosenza. Senza prenotazione non è possibile essere ricevuti allo sportello.",
+      "ufficio": "Comune di Cosenza — Ufficio Anagrafe, Piazza dei Bruzi 4",
+      "costo_stimato_eur": null,
+      "tempo_stimato_giorni": 1,
+      "documents": []
+    },
+    {
+      "order": 2,
+      "title": "Presentati allo sportello con i documenti richiesti",
+      "description": "Il giorno dell'appuntamento, recati allo sportello Anagrafe con tutta la documentazione. L'operatore acquisirà le tue impronte digitali, la firma digitale e la fotografia direttamente allo sportello (non serve foto cartacea). Se stai rinnovando una CIE o una carta cartacea scaduta, porta il documento precedente.",
+      "ufficio": "Comune di Cosenza — Ufficio Anagrafe, Piazza dei Bruzi 4",
+      "costo_stimato_eur": 22.21,
+      "tempo_stimato_giorni": 1,
+      "documents": [
+        {
+          "name": "Documento d'identità scaduto o deteriorato (se rinnovo)",
+          "required": false,
+          "notes": "Portare il vecchio documento anche se scaduto"
+        },
+        {
+          "name": "Codice fiscale o tessera sanitaria",
+          "required": true,
+          "notes": null
+        },
+        {
+          "name": "Pagamento di € 22,21",
+          "required": true,
+          "notes": "Pagabile in contanti allo sportello o tramite PagoPA"
+        }
+      ]
+    },
+    {
+      "order": 3,
+      "title": "Ricevi la CIE a casa",
+      "description": "La CIE non viene consegnata immediatamente allo sportello. Il Ministero dell'Interno la spedisce all'indirizzo di residenza (o a un altro indirizzo indicato in fase di richiesta) entro 6 giorni lavorativi dalla richiesta tramite posta raccomandata. In attesa della CIE, il Comune rilascia una ricevuta con validità di 6 mesi come documento di viaggio nell'UE.",
+      "ufficio": "Consegna a domicilio tramite Poligrafico dello Stato",
+      "costo_stimato_eur": null,
+      "tempo_stimato_giorni": 6,
+      "documents": []
+    }
+  ]
+}

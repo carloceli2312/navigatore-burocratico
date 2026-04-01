@@ -1,0 +1,76 @@
+{
+  "slug": "matrimonio-civile-cosenza",
+  "name": "Matrimonio Civile — Pubblicazioni e Celebrazione",
+  "category": "stato-civile",
+  "description": "La procedura per contrarre matrimonio civile davanti all'Ufficiale di Stato Civile del Comune di Cosenza comprende due fasi: le pubblicazioni (affissione dell'avviso per 8 giorni consecutivi) e la celebrazione (non prima del 3° giorno dalla conclusione delle pubblicazioni). Il matrimonio civile ha piena validità legale e produce gli stessi effetti giuridici del matrimonio religioso concordatario.",
+  "ente_competente": "Comune di Cosenza — Ufficio di Stato Civile",
+  "tags": ["stato-civile", "matrimonio", "famiglia", "privato"],
+  "tempo_stimato_giorni": 30,
+  "costo_stimato_eur": 50.0,
+  "steps": [
+    {
+      "order": 1,
+      "title": "Richiedi le pubblicazioni di matrimonio",
+      "description": "Almeno 30 giorni prima della data desiderata per il matrimonio, uno o entrambi i futuri sposi devono recarsi all'Ufficio di Stato Civile per richiedere le pubblicazioni. Le pubblicazioni vengono affisse per 8 giorni consecutivi all'albo del Comune di residenza di entrambi gli sposi. Se uno dei due risiede in un altro comune, le pubblicazioni vanno richieste anche in quel comune. La celebrazione può avvenire non prima del 3° giorno dopo la conclusione delle pubblicazioni, e comunque entro 6 mesi.",
+      "ufficio": "Comune di Cosenza — Ufficio di Stato Civile, Piazza dei Bruzi 4",
+      "costo_stimato_eur": 16.0,
+      "tempo_stimato_giorni": 11,
+      "documents": [
+        {
+          "name": "Documento di identità valido di entrambi gli sposi",
+          "required": true,
+          "notes": null
+        },
+        {
+          "name": "Codice fiscale di entrambi",
+          "required": true,
+          "notes": null
+        },
+        {
+          "name": "Certificato di nascita di entrambi gli sposi",
+          "required": true,
+          "notes": "Se nati a Cosenza, l'ufficio lo acquisisce d'ufficio; se nati altrove, portare il certificato del Comune di nascita"
+        },
+        {
+          "name": "Nulla osta al matrimonio (per stranieri)",
+          "required": false,
+          "notes": "Richiesto solo per cittadini stranieri, rilasciato dal consolato del proprio paese"
+        },
+        {
+          "name": "Sentenza di divorzio o morte del coniuge precedente (se vedovi/divorziati)",
+          "required": false,
+          "notes": "Solo se uno dei due ha già contratto matrimonio in precedenza"
+        }
+      ]
+    },
+    {
+      "order": 2,
+      "title": "Fissa la data di celebrazione",
+      "description": "Dopo la richiesta di pubblicazioni, concorda con l'Ufficio di Stato Civile la data e l'ora della cerimonia. La cerimonia può tenersi nella sala matrimoni del Municipio di Cosenza (Piazza dei Bruzi) o, a richiesta e con onere aggiuntivo, in altra sede autorizzata dal Comune. Sono necessari due testimoni maggiorenni.",
+      "ufficio": "Comune di Cosenza — Ufficio di Stato Civile",
+      "costo_stimato_eur": 0.0,
+      "tempo_stimato_giorni": 1,
+      "documents": []
+    },
+    {
+      "order": 3,
+      "title": "Celebrazione del matrimonio",
+      "description": "Il giorno fissato, presentatevi con i testimoni (devono essere almeno 2, massimo 4) davanti all'Ufficiale di Stato Civile. Verranno letti gli articoli del codice civile e gli sposi pronunceranno il consenso. L'atto viene immediatamente trascritto nei registri di stato civile. Dopo la celebrazione potete richiedere il certificato di matrimonio.",
+      "ufficio": "Comune di Cosenza — Sala Matrimoni, Piazza dei Bruzi 4",
+      "costo_stimato_eur": 34.0,
+      "tempo_stimato_giorni": 1,
+      "documents": [
+        {
+          "name": "Documento di identità valido degli sposi",
+          "required": true,
+          "notes": null
+        },
+        {
+          "name": "Documento di identità valido dei testimoni (min. 2)",
+          "required": true,
+          "notes": "I testimoni devono essere maggiorenni"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "slug": "riduzione-tari-cosenza",
+  "name": "Richiesta di Riduzione o Esenzione TARI",
+  "category": "tributi",
+  "description": "La TARI (Tassa sui Rifiuti) finanzia il servizio di raccolta e smaltimento dei rifiuti urbani. Il Comune di Cosenza prevede riduzioni tariffarie per alcune categorie di utenti (residenti assenti per lunghi periodi, utenze in immobili parzialmente utilizzati, compostaggio domestico) ed esenzioni per i nuclei familiari in condizioni di grave disagio economico. La richiesta va presentata entro la scadenza stabilita annualmente.",
+  "ente_competente": "Comune di Cosenza — Ufficio Tributi / Cosenza Ambiente (gestore del servizio)",
+  "tags": ["tributi", "tari", "rifiuti", "agevolazione", "privato"],
+  "tempo_stimato_giorni": 60,
+  "costo_stimato_eur": 0.0,
+  "steps": [
+    {
+      "order": 1,
+      "title": "Verifica il tipo di riduzione a cui hai diritto",
+      "description": "Le principali riduzioni TARI previste dal regolamento del Comune di Cosenza sono: (A) 30% per utenze domestiche con un solo occupante; (B) riduzione per immobili tenuti a disposizione per uso limitato e non continuativo (non inferiore al 30%); (C) esenzione o riduzione per compostaggio domestico (previo accreditamento); (D) riduzione per disagio economico accertato (ISEE sotto soglia). Verifica il regolamento TARI vigente sul sito del Comune per le percentuali esatte dell'anno corrente.",
+      "ufficio": null,
+      "costo_stimato_eur": null,
+      "tempo_stimato_giorni": 1,
+      "documents": []
+    },
+    {
+      "order": 2,
+      "title": "Presenta la domanda all'Ufficio Tributi",
+      "description": "Presenta la domanda di riduzione o esenzione TARI all'Ufficio Tributi del Comune di Cosenza entro la scadenza annuale (solitamente il 31 gennaio dell'anno di riferimento, ma verifica la data sul sito comunale). La domanda può essere presentata allo sportello, tramite PEC (comune.cosenza@pec.it) o tramite il portale Servizi Online del Comune.",
+      "ufficio": "Comune di Cosenza — Ufficio Tributi",
+      "costo_stimato_eur": 0.0,
+      "tempo_stimato_giorni": 1,
+      "documents": [
+        {
+          "name": "Modulo di richiesta riduzione/esenzione TARI",
+          "required": true,
+          "notes": "Scaricabile dal sito del Comune di Cosenza sezione Tributi"
+        },
+        {
+          "name": "Documento di identità",
+          "required": true,
+          "notes": null
+        },
+        {
+          "name": "Attestazione ISEE in corso di validità",
+          "required": false,
+          "notes": "Obbligatoria solo per riduzioni legate al disagio economico"
+        },
+        {
+          "name": "Dichiarazione sostitutiva di non utilizzo o utilizzo limitato dell'immobile",
+          "required": false,
+          "notes": "Per riduzione utenze non continuative"
+        },
+        {
+          "name": "Documentazione compostiera (foto, autodichiarazione)",
+          "required": false,
+          "notes": "Solo per richiesta riduzione compostaggio domestico"
+        }
+      ]
+    }
+  ]
+}

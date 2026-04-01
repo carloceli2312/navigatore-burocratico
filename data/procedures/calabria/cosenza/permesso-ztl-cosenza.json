@@ -1,0 +1,61 @@
+{
+  "slug": "permesso-ztl-cosenza",
+  "name": "Permesso di Accesso alla ZTL — Centro Storico di Cosenza",
+  "category": "mobilita",
+  "description": "La Zona a Traffico Limitato (ZTL) del Centro Storico di Cosenza regolamenta l'accesso veicolare nelle aree pedonali e limitrofe del nucleo storico della città. L'accesso è consentito solo ai veicoli muniti di apposito permesso rilasciato dall'Ufficio Mobilità del Comune. Esistono diverse categorie di permesso: residenti, commercianti/artigiani con attività nella ZTL, utenti occasionali per carico/scarico, portatori di handicap (con contrassegno europeo).",
+  "ente_competente": "Comune di Cosenza — Ufficio Mobilità e Traffico / Polizia Municipale",
+  "tags": ["mobilita", "ztl", "centro-storico", "privato", "impresa"],
+  "tempo_stimato_giorni": 15,
+  "costo_stimato_eur": 30.0,
+  "steps": [
+    {
+      "order": 1,
+      "title": "Individua la categoria di permesso necessaria",
+      "description": "Verifica quale tipo di permesso ZTL ti serve: (A) Residenti: per chi risiede anagraficamente nella ZTL, generalmente gratuito o con tariffa agevolata; (B) Lavoratori/Commercianti: per chi ha attività commerciale o professionale nella ZTL; (C) Carico/Scarico: per attività di consegna merci, con fasce orarie specifiche; (D) Permesso temporaneo: per accesso occasionale (traslochi, interventi di manutenzione, ecc.). I portatori di handicap con contrassegno europeo hanno accesso libero.",
+      "ufficio": null,
+      "costo_stimato_eur": null,
+      "tempo_stimato_giorni": 1,
+      "documents": []
+    },
+    {
+      "order": 2,
+      "title": "Presenta la domanda all'Ufficio Mobilità",
+      "description": "Presenta la domanda di permesso ZTL all'Ufficio Mobilità e Traffico del Comune di Cosenza o allo sportello della Polizia Municipale. La domanda può essere presentata anche online tramite il portale Servizi Online del Comune. Indica chiaramente la categoria richiesta e allega la documentazione pertinente. Il permesso ha validità annuale (per residenti e commercianti) o temporanea (per accessi occasionali).",
+      "ufficio": "Comune di Cosenza — Ufficio Mobilità e Traffico / Comando PM, Via Cattaro 2",
+      "costo_stimato_eur": 30.0,
+      "tempo_stimato_giorni": 10,
+      "documents": [
+        {
+          "name": "Domanda di rilascio permesso ZTL (modulo comunale)",
+          "required": true,
+          "notes": "Disponibile sul sito del Comune o allo sportello"
+        },
+        {
+          "name": "Documento di identità",
+          "required": true,
+          "notes": null
+        },
+        {
+          "name": "Libretto di circolazione del veicolo da autorizzare",
+          "required": true,
+          "notes": "Il permesso è legato al veicolo specifico"
+        },
+        {
+          "name": "Certificato di residenza nella ZTL",
+          "required": false,
+          "notes": "Solo per permessi residenti"
+        },
+        {
+          "name": "Visura camerale o licenza commerciale",
+          "required": false,
+          "notes": "Solo per permessi commercianti/artigiani"
+        },
+        {
+          "name": "Ricevuta pagamento diritti",
+          "required": true,
+          "notes": "Importo variabile per categoria; gratuito per residenti nella ZTL in alcune fasce"
+        }
+      ]
+    }
+  ]
+}

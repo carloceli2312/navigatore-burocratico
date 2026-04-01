@@ -1,0 +1,47 @@
+{
+  "slug": "certificato-stato-famiglia-cosenza",
+  "name": "Certificato di Stato di Famiglia",
+  "category": "anagrafe",
+  "description": "Il certificato di stato di famiglia elenca le persone che convivono nello stesso nucleo familiare risultanti dall'anagrafe comunale. È frequentemente richiesto per pratiche INPS, detrazioni fiscali, iscrizioni scolastiche, agevolazioni tariffarie e richieste di sussidi. Come tutti i certificati anagrafici, è disponibile gratuitamente online tramite ANPR con SPID o CIE.",
+  "ente_competente": "Comune di Cosenza — Ufficio Anagrafe / ANPR",
+  "tags": ["anagrafe", "certificato", "famiglia", "nucleo-familiare", "privato"],
+  "tempo_stimato_giorni": 1,
+  "costo_stimato_eur": 0.0,
+  "steps": [
+    {
+      "order": 1,
+      "title": "Scarica il certificato online tramite ANPR (gratuito)",
+      "description": "Accedi al portale ANPR (anagrafenazionale.interno.it) con SPID, CIE o CNS e scarica il certificato di stato di famiglia in formato PDF digitale. È immediatamente disponibile, gratuito e ha piena validità legale. Puoi scaricarlo solo per il tuo nucleo familiare. Per le autocertificazioni verso la Pubblica Amministrazione non è necessario alcun certificato: basta la dichiarazione sostitutiva (DPR 445/2000).",
+      "ufficio": "Portale ANPR online — anagrafenazionale.interno.it",
+      "costo_stimato_eur": 0.0,
+      "tempo_stimato_giorni": 1,
+      "documents": [
+        {
+          "name": "Identità digitale (SPID, CIE o CNS)",
+          "required": true,
+          "notes": "Necessaria per accedere al portale ANPR"
+        }
+      ]
+    },
+    {
+      "order": 2,
+      "title": "(Alternativa) Richiesta allo sportello Anagrafe",
+      "description": "In assenza di identità digitale, puoi richiedere il certificato allo sportello Anagrafe presentando un documento di identità. Il rilascio è immediato. Per uso verso enti privati può essere richiesta la marca da bollo da € 16,00.",
+      "ufficio": "Comune di Cosenza — Ufficio Anagrafe, Piazza dei Bruzi 4",
+      "costo_stimato_eur": 16.0,
+      "tempo_stimato_giorni": 1,
+      "documents": [
+        {
+          "name": "Documento di identità valido",
+          "required": true,
+          "notes": null
+        },
+        {
+          "name": "Marca da bollo da € 16,00",
+          "required": false,
+          "notes": "Solo per uso verso soggetti privati (banche, assicurazioni, ecc.)"
+        }
+      ]
+    }
+  ]
+}
