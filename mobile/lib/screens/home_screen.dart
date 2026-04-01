@@ -40,14 +40,29 @@ class _HomeScreenState extends State<HomeScreen> {
 
     return Scaffold(
       backgroundColor: _warmGrey,
-      body: CustomScrollView(
-        slivers: [
-          _buildHeader(auth),
-          const SliverToBoxAdapter(child: SizedBox(height: 24)),
-          _buildSectionLabel(procs),
-          _buildProceduresList(procs),
-          _buildAiBanner(),
-          const SliverToBoxAdapter(child: SizedBox(height: 28)),
+      body: IndexedStack(
+        index: _navIndex,
+        children: [
+          // ── Tab 0: Home ──────────────────────────────────────────────────
+          CustomScrollView(
+            slivers: [
+              _buildHeader(auth),
+              const SliverToBoxAdapter(child: SizedBox(height: 24)),
+              _buildSectionLabel(procs),
+              _buildProceduresList(procs),
+              _buildAiBanner(),
+              const SliverToBoxAdapter(child: SizedBox(height: 28)),
+            ],
+          ),
+          // ── Tab 1: Procedure ─────────────────────────────────────────────
+          CustomScrollView(
+            slivers: [
+              _buildProcedureTabHeader(),
+              _buildSectionLabel(procs),
+              _buildProceduresList(procs),
+              const SliverToBoxAdapter(child: SizedBox(height: 28)),
+            ],
+          ),
         ],
       ),
       bottomNavigationBar: _buildBottomNav(),
@@ -104,6 +119,29 @@ class _HomeScreenState extends State<HomeScreen> {
             const SizedBox(height: 16),
             _buildLocationPill(),
           ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildProcedureTabHeader() {
+    return SliverToBoxAdapter(
+      child: Container(
+        color: Colors.white,
+        padding: EdgeInsets.only(
+          top: MediaQuery.of(context).padding.top + 16,
+          left: 20,
+          right: 20,
+          bottom: 18,
+        ),
+        child: const Text(
+          'Procedure',
+          style: TextStyle(
+            fontSize: 24,
+            fontWeight: FontWeight.w800,
+            color: _textPrimary,
+            letterSpacing: -0.3,
+          ),
         ),
       ),
     );
