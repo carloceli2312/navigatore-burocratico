@@ -1,0 +1,12 @@
+FROM python:3.13-slim
+
+WORKDIR /app
+
+# Solo le dipendenze necessarie al server MCP
+RUN pip install --no-cache-dir "mcp>=1.0.0"
+
+COPY procedure_agent/ ./procedure_agent/
+COPY data/ ./data/
+
+# Il server MCP comunica via stdio — docker run -i passa stdin/stdout al container
+CMD ["python", "-m", "procedure_agent.server"]

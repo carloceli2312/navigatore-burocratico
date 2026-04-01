@@ -1,9 +1,12 @@
 {
   "mcpServers": {
     "procedure-agent": {
-      "command": "python",
-      "args": ["-m", "procedure_agent.server"],
-      "cwd": "${workspaceFolder}"
+      "command": "docker",
+      "args": [
+        "run", "-i", "--rm",
+        "-v", "C:/Users/carlo/dev/navigatore-burocratico/data:/app/data",
+        "navigatore-burocratico-procedure-agent:latest"
+      ]
     }
   }
 }
