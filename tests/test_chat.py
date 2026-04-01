@@ -26,16 +26,15 @@ async def test_chat_basic(client):
     assert response.json()["reply"] == "Per presentare la SCIA devi..."
 
 
-async def test_chat_with_procedure_slug(client):
+async def test_chat_with_procedure_slug(seeded_client):
     with _mock_ollama("La SCIA edilizia richiede...") as mock:
-        async with client as c:
-            response = await c.post(
-                "/v1/chat",
-                json={
-                    "message": "Quali documenti servono?",
-                    "procedure_slug": "scia-edilizia-cosenza",
-                },
-            )
+        response = await seeded_client.post(
+            "/v1/chat",
+            json={
+                "message": "Quali documenti servono?",
+                "procedure_slug": "scia-edilizia-cosenza",
+            },
+        )
     assert response.status_code == 200
     # verify that the system prompt was enriched with procedure context
     called_payload = mock.call_args[0][0]
@@ -43,14 +42,13 @@ async def test_chat_with_procedure_slug(client):
     assert "SCIA Edilizia" in system_msg
 
 
-async def test_chat_unknown_procedure_slug(client):
+async def test_chat_unknown_procedure_slug(seeded_client):
     """Unknown slug is silently ignored — base system prompt is used."""
     with _mock_ollama("Non conosco quella procedura."):
-        async with client as c:
-            response = await c.post(
-                "/v1/chat",
-                json={"message": "Cosa devo fare?", "procedure_slug": "procedura-inesistente"},
-            )
+        response = await seeded_client.post(
+            "/v1/chat",
+            json={"message": "Cosa devo fare?", "procedure_slug": "procedura-inesistente"},
+        )
     assert response.status_code == 200
 
 
