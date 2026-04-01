@@ -60,14 +60,20 @@ async def _build_system_prompt(procedure_slug: str | None, db: AsyncSession) -> 
     return _SYSTEM_PROMPT + context
 
 
-async def ask(message: str, db: AsyncSession, procedure_slug: str | None = None) -> str:
+async def ask(
+    message: str,
+    db: AsyncSession,
+    procedure_slug: str | None = None,
+    history: list[dict] | None = None,
+) -> str:
     system_prompt = await _build_system_prompt(procedure_slug, db)
+    messages: list[dict] = [{"role": "system", "content": system_prompt}]
+    if history:
+        messages.extend(history)
+    messages.append({"role": "user", "content": message})
     payload = {
         "model": settings.ollama_model,
-        "messages": [
-            {"role": "system", "content": system_prompt},
-            {"role": "user", "content": message},
-        ],
+        "messages": messages,
         "stream": False,
     }
     data = await _call_ollama(payload)

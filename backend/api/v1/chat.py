@@ -12,6 +12,7 @@ router = APIRouter(prefix="/v1/chat", tags=["chat"])
 class ChatRequest(BaseModel):
     message: str = Field(..., min_length=1, max_length=1000)
     procedure_slug: str | None = None
+    history: list[dict[str, str]] = Field(default_factory=list)
 
 
 class ChatResponse(BaseModel):
@@ -27,7 +28,7 @@ async def chat(
         raise HTTPException(status_code=429, detail="Troppe richieste. Riprova tra un minuto.")
 
     try:
-        reply = await ask(body.message, db, body.procedure_slug)
+        reply = await ask(body.message, db, body.procedure_slug, body.history or None)
     except OllamaError as exc:
         raise HTTPException(status_code=503, detail=str(exc)) from exc
 

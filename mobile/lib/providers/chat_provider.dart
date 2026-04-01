@@ -30,6 +30,11 @@ class ChatProvider extends ChangeNotifier {
   Future<void> sendMessage(String text) async {
     if (text.trim().isEmpty) return;
 
+    // Snapshot della history PRIMA di aggiungere il nuovo messaggio
+    final history = _messages
+        .map((m) => {'role': m.isUser ? 'user' : 'assistant', 'content': m.content})
+        .toList();
+
     _messages.add(ChatMessage(content: text.trim(), isUser: true));
     _isLoading = true;
     notifyListeners();
@@ -39,6 +44,7 @@ class ChatProvider extends ChangeNotifier {
         '/v1/chat',
         data: {
           'message': text.trim(),
+          if (history.isNotEmpty) 'history': history,
           if (_procedureSlug != null) 'procedure_slug': _procedureSlug,
         },
       );
