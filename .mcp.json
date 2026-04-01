@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "procedure-agent": {
+      "command": "python",
+      "args": ["-m", "procedure_agent.server"],
+      "cwd": "${workspaceFolder}"
+    }
+  }
+}
