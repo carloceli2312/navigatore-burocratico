@@ -4,6 +4,7 @@ WORKDIR /app
 
 COPY pyproject.toml README.md ./
 COPY backend/ ./backend/
+COPY procedure_agent/ ./procedure_agent/
 COPY data/ ./data/
 COPY alembic.ini ./
 COPY alembic/ ./alembic/
